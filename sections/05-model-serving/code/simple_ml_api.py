@@ -8,6 +8,7 @@ Demonstrates best practices for model serving.
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field, validator
 from typing import List, Dict, Any
+from contextlib import asynccontextmanager
 import joblib
 import numpy as np
 from datetime import datetime
@@ -118,26 +119,22 @@ class MockModel:
 
 
 # ============================================================================
-# FastAPI App
+# FastAPI App with Lifespan Management
 # ============================================================================
-
-app = FastAPI(
-    title="ML Prediction API",
-    description="Production-ready ML model serving with FastAPI",
-    version="1.0.0",
-    docs_url="/docs",
-    redoc_url="/redoc"
-)
 
 # Global model instance
 model = None
 MODEL_VERSION = "1.0.0"
 
 
-@app.on_event("startup")
-async def load_model():
-    """Load model on startup."""
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """
+    Lifespan context manager for startup and shutdown events.
+    Replaces deprecated @app.on_event decorators.
+    """
     global model
+    # Startup: Load model
     try:
         # In production, load actual model:
         # model = joblib.load('models/model.pkl')
@@ -148,6 +145,21 @@ async def load_model():
     except Exception as e:
         logger.error(f"Failed to load model: {e}")
         raise
+    
+    yield  # App runs here
+    
+    # Shutdown: Cleanup if needed
+    logger.info("Shutting down gracefully")
+
+
+app = FastAPI(
+    title="ML Prediction API",
+    description="Production-ready ML model serving with FastAPI",
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    lifespan=lifespan
+)
 
 
 @app.get("/", response_model=Dict[str, str])
