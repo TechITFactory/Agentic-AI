@@ -12,13 +12,16 @@ Protect the assistant from malicious docs and user prompts.
 
 **Time**: ~25 minutes
 
-**Tasks
+**Tasks**:
+
 1) Implement basic filters and system prompt constraints
 2) Validate outputs (JSON) before returning
 3) Log blocked attempts
 
-**Deliverable
+**Deliverable**:
+
 - Security notes and code snippets for filters/validation
 
-**Checkpoint
+**Checkpoint**:
+
 Would embedded “ignore instructions” text be neutralized by your defenses?

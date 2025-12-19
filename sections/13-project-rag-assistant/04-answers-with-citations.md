@@ -12,13 +12,16 @@ Return trustworthy responses grounded in retrieved sources.
 
 **Time**: ~30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Add citations to prompts
 2) Return JSON with answer + sources
 3) Handle insufficient evidence gracefully
 
-**Deliverable
+**Deliverable**:
+
 - Response samples showing citations
 
-**Checkpoint
+**Checkpoint**:
+
 Do all answers include real source IDs, not fabricated ones?

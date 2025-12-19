@@ -28,6 +28,7 @@ Build a production-grade RAG system that answers questions from documents with p
 ## What You'll Build
 
 A complete RAG system that:
+
 - Ingests documents (PDF, Markdown)
 - Chunks intelligently
 - Generates embeddings

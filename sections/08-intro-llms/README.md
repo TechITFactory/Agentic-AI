@@ -40,7 +40,7 @@ Get a practical, jargon-free introduction to large language models. Learn how to
 
 ## Section Structure
 
-```
+```text
 sections/08-intro-llms/
 ├── README.md
 ├── 01-llm-fundamentals.md
@@ -50,8 +50,7 @@ sections/08-intro-llms/
 ├── 05-json-mode.md
 ├── 06-tool-calling.md
 └── 07-mini-lab-json-assistant.md
-```
-
+```text
 ## What's Next?
 
 Move to [Section 9: Embeddings & Vector Databases](../09-embeddings-vector-dbs/README.md) to prepare for RAG.

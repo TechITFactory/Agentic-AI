@@ -23,9 +23,11 @@ This isn't just another AI course with toy examples. You're going to build **thr
 ### Project 1: MLOps Churn Prediction System 📊
 
 **What is it?**
+
 A complete machine learning system that predicts customer churn with full MLOps practices.
 
 **What you'll build:**
+
 - End-to-end ML pipeline (data processing → training → evaluation)
 - Feature engineering pipeline
 - Model serving API with FastAPI
@@ -35,9 +37,11 @@ A complete machine learning system that predicts customer churn with full MLOps 
 - Basic monitoring setup
 
 **Real-world use case:**
+
 This is exactly how companies deploy ML models in production. Whether it's predicting churn, fraud, or recommendations, the pattern is the same.
 
 **Interview talking points:**
+
 - "I built a production ML pipeline that handles..."
 - "I implemented CI/CD for model deployment..."
 - "I configured Kubernetes autoscaling for ML inference..."
@@ -49,9 +53,11 @@ This is exactly how companies deploy ML models in production. Whether it's predi
 ### Project 2: RAG Knowledge Assistant 📚
 
 **What is it?**
+
 A Retrieval-Augmented Generation system that answers questions from your documents with proper citations - no hallucinations.
 
 **What you'll build:**
+
 - Document ingestion pipeline (PDF, Markdown)
 - Text chunking with optimal strategies
 - Vector embeddings and similarity search
@@ -61,9 +67,11 @@ A Retrieval-Augmented Generation system that answers questions from your documen
 - Evaluation framework with golden dataset
 
 **Real-world use case:**
+
 Every company wants to "chat with their docs" - internal wikis, support docs, legal documents. You'll build the real thing, not a demo.
 
 **Interview talking points:**
+
 - "I implemented RAG with retrieval evaluation at recall@k..."
 - "I built chunking strategies that improved answer quality by..."
 - "I added security measures against prompt injection..."
@@ -75,9 +83,11 @@ Every company wants to "chat with their docs" - internal wikis, support docs, le
 ### Project 3: DevOps Agent (Agentic AI) 🤖
 
 **What is it?**
+
 An autonomous AI agent that can analyze logs, interact with Kubernetes, and generate YAML configs - safely.
 
 **What you'll build:**
+
 - Agent with Plan → Act → Observe → Reflect loop
 - Safe, deterministic tools (log analyzer, k8s helper, YAML generator)
 - Tool execution with guardrails and timeouts
@@ -86,9 +96,11 @@ An autonomous AI agent that can analyze logs, interact with Kubernetes, and gene
 - Agent deployment as a service
 
 **Real-world use case:**
+
 Agentic AI is the future - agents that can automate complex workflows. This project shows you understand the architecture and safety concerns.
 
 **Interview talking points:**
+
 - "I built an autonomous agent with proper guardrails..."
 - "I implemented tool execution with timeout and safety checks..."
 - "I designed tools following deterministic principles..."
@@ -124,6 +136,7 @@ You don't need a PhD in statistics to build AI systems. You need:
 - **Real Tools**: What companies actually use
 
 We'll skip:
+
 - Deep mathematical proofs
 - 50 different ML algorithms
 - Academic papers (unless directly useful)
@@ -131,7 +144,7 @@ We'll skip:
 
 ## Learning Path Through the Course
 
-```
+```text
 Foundation (Weeks 1-2)
 └─ Python + Data Science basics
 
@@ -146,8 +159,7 @@ Build Phase (Weeks 7-12)
 
 Career Prep (Week 13)
 └─ Interview prep + Resume
-```
-
+```text
 ## Who This Course Is NOT For
 
 Be honest with yourself - this course requires:

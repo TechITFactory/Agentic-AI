@@ -12,7 +12,8 @@ Showcase your work publicly to cement learning and attract opportunities.
 
 **Time**: ~30-45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Pick one project to publish prominently
 2) Record a short walkthrough or write a blog
 3) Update README with quickstart, demo links, and limitations

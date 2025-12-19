@@ -12,13 +12,16 @@ Package and deploy the API in a reproducible way across environments.
 
 **Time**: ~45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Write Dockerfile and build/run image
 2) Create Deployment + Service manifests with readiness/liveness
 3) Add optional HPA manifest
 
-**Deliverable
+**Deliverable**:
+
 - Dockerfile, k8s/ manifests, run commands
 
-**Checkpoint
+**Checkpoint**:
+
 Does the pod become Ready and respond to /health after deploy?

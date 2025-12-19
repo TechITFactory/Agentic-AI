@@ -16,11 +16,13 @@ This section covers Python fundamentals specifically for AI/ML work. We focus on
 ## Why Only What You Need?
 
 We assume you have basic programming knowledge (any language). This section teaches:
+
 - ✅ Python syntax you'll use in ML
 - ✅ Libraries essential for data work
 - ✅ Practical patterns for AI projects
 
 We skip:
+
 - ❌ Deep Python internals
 - ❌ Advanced OOP patterns
 - ❌ Web frameworks (except FastAPI later)
@@ -44,12 +46,13 @@ We skip:
 ## Duration
 
 **Estimated Time**: 6-8 hours
+
 - If you know Python: 3-4 hours (focus on NumPy/Pandas)
 - If new to Python: 8-10 hours
 
 ## Section Structure
 
-```
+```text
 sections/02-python-for-ai/
 ├── README.md                    # This file
 ├── 01-python-crash-course.md    # Python basics
@@ -69,11 +72,11 @@ sections/02-python-for-ai/
         │   └── user_activity.csv
         ├── starter.py
         └── solution.py
-```
-
+```text
 ## Learning Objectives
 
 By the end of this section, you will be able to:
+
 - ✅ Write clean Python code for ML projects
 - ✅ Manage virtual environments and dependencies
 - ✅ Manipulate data with NumPy arrays
@@ -105,8 +108,7 @@ python code/pandas_examples.py
 # Launch notebook for interactive learning
 
 jupyter notebook
-```
-
+```text
 ## Tips for This Section
 
 1. **Code Along**: Type examples yourself

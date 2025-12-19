@@ -12,13 +12,16 @@ Package the project for showcasing and interviews.
 
 **Time**: ~20-30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Record or script a demo scenario
 2) Summarize architecture (tools, loop, guardrails)
 3) List limitations and planned improvements
 
-**Deliverable
+**Deliverable**:
+
 - Demo script/notes and one-page summary
 
-**Checkpoint
+**Checkpoint**:
+
 Can you explain how you prevent unsafe commands during the demo?

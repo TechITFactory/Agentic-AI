@@ -40,7 +40,6 @@ Take the FastAPI prediction service you built and ship it like a production team
 
 ## Section Structure
 
-```
 sections/06-containers-deployment/
 ├── README.md
 ├── 01-dockerize-ml-api.md
@@ -49,7 +48,6 @@ sections/06-containers-deployment/
 ├── 04-health-probes.md
 ├── 05-autoscaling-hpa.md
 └── 06-mini-lab-k8s-deploy.md
-```
 
 ## What's Next?
 

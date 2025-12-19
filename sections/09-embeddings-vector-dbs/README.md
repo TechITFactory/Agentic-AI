@@ -38,7 +38,7 @@ Learn how to represent text as vectors, store them efficiently, and run similari
 
 ## Section Structure
 
-```
+```text
 sections/09-embeddings-vector-dbs/
 ├── README.md
 ├── 01-what-are-embeddings.md
@@ -47,8 +47,7 @@ sections/09-embeddings-vector-dbs/
 ├── 04-metadata-filtering.md
 ├── 05-mini-lab-generate-embeddings.md
 └── 06-mini-lab-vector-search.md
-```
-
+```text
 ## What's Next?
 
 Move to [Section 10: RAG End-to-End](../10-rag-end-to-end/README.md) to build a full retrieval-augmented generation system.

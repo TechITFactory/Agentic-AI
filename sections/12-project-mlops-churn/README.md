@@ -7,6 +7,7 @@ Build a complete MLOps system for predicting customer churn. This is your first 
 ## What You'll Build
 
 A production-ready ML system with:
+
 - ✅ Data processing pipeline
 - ✅ Feature engineering
 - ✅ Model training with experiment tracking
@@ -19,7 +20,7 @@ A production-ready ML system with:
 
 ## Project Structure
 
-```
+```text
 12-project-mlops-churn/
 ├── data/                  # Dataset
 ├── notebooks/            # EDA and experiments
@@ -33,11 +34,11 @@ A production-ready ML system with:
 ├── k8s/                 # Kubernetes manifests
 ├── .github/workflows/   # CI/CD
 └── docs/                # Documentation
-```
-
+```text
 ## Skills Demonstrated
 
 This project proves you can:
+
 - Build ML pipelines from scratch
 - Deploy models as production APIs
 - Use containerization and orchestration

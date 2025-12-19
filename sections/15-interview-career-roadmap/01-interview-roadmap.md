@@ -12,7 +12,8 @@ Know what topics to prepare across ML, LLMs, and systems.
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) Map topics to target roles
 2) Identify your gaps
 3) Draft a 4-week prep plan

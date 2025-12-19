@@ -56,8 +56,7 @@ Get oriented, pick your target role, and stand up a working dev environment befo
 python -m venv venv; .\venv\Scripts\activate; pip install --upgrade pip
 pip install -r requirements.txt
 jupyter --version
-```
-
+```text
 ## What's Next?
 
 Once the checklist is green, move to [Section 2: Python for AI](../02-python-for-ai/README.md). If any tool fails, fix it now—every later section assumes this environment is solid.

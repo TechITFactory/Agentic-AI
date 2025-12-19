@@ -12,13 +12,16 @@ Enforce safety so the agent cannot exceed its scope or budget.
 
 **Time**: ~30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Enforce allowlist and budgets in the loop
 2) Add redaction/sanitization where needed
 3) Define behavior on guardrail violation
 
-**Deliverable
+**Deliverable**:
+
 - Guardrail config and code snippets
 
-**Checkpoint
+**Checkpoint**:
+
 What happens when the agent attempts a disallowed action?

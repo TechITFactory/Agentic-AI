@@ -18,26 +18,24 @@ See how the course is sequenced so you can budget time and avoid skipping founda
 
 Most AI/ML courses follow this pattern:
 
-```
+```text
 1. 40 hours of linear algebra
 2. 30 hours of calculus
 3. 50 hours of statistics
 4. Finally... some code (that doesn't work in production)
-```
-
+```text
 **Result**: You have theoretical knowledge but can't build anything real.
 
 ## Our Philosophy: "Minimum DS + Maximum Practical"
 
 We flip it:
 
-```
+```text
 1. Learn just enough theory to understand what you're doing
 2. Immediately apply it in code
 3. Build production-ready systems
 4. Ship real projects
-```
-
+```text
 **Result**: You can build and deploy AI systems from day one.
 
 ---
@@ -65,12 +63,14 @@ We flip it:
 **Example: Understanding Overfitting**
 
 ❌ **Traditional approach**:
+
 - Mathematical definition of bias-variance tradeoff
 - Proofs and equations
 - Theoretical exercises
 - *Result: You understand the math but can't recognize it in practice*
 
 ✅ **Our approach**:
+
 - "Your model memorized the training data instead of learning patterns"
 - Show it in code with a simple demo
 - How to detect it (validation curve)
@@ -84,6 +84,7 @@ We flip it:
 ### Every Concept → Immediate Code
 
 **Structure of Each Lesson:**
+
 1. **Concept** (2-3 paragraphs max)
 2. **Code Example** (working, tested)
 3. **Lab Exercise** (hands-on)
@@ -113,8 +114,7 @@ model.fit(X_train_scaled, y_train)
 
 # See the difference yourself!
 
-```
-
+```text
 No 30-minute lecture on normalization theory. You see the problem, apply the solution, measure the impact.
 
 ---
@@ -130,6 +130,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 - Basic ML concepts (datasets, splits, metrics)
 
 **Philosophy**: Learn by doing
+
 - Mini labs after each concept
 - Real datasets (not iris/titanic)
 - Immediate feedback
@@ -144,6 +145,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 - MLOps basics (CI/CD, monitoring)
 
 **Philosophy**: DevOps mindset from day one
+
 - No model stays in a notebook
 - Everything gets deployed
 - Real deployment patterns
@@ -158,6 +160,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 - Agentic AI with guardrails
 
 **Philosophy**: Security-aware from start
+
 - Prompt injection defenses
 - Tool guardrails
 - Evaluation frameworks
@@ -171,6 +174,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 - Project 3: DevOps Agent
 
 **Philosophy**: Ship real products
+
 - Complete implementations (not demos)
 - Deployment included
 - Interview talking points provided
@@ -213,11 +217,13 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 ### Example 1: Linear Regression
 
 **What we WON'T teach**:
+
 - Matrix calculus derivations
 - Proof of least squares solution
 - Gradient descent mathematics
 
 **What we WILL teach**:
+
 - When to use linear regression (predict continuous values)
 - How to train it in scikit-learn (3 lines)
 - How to interpret coefficients (feature importance)
@@ -229,6 +235,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 ### Example 2: Neural Networks
 
 **We DON'T cover**:
+
 - Backpropagation derivations
 - Activation function mathematics
 - Optimizer comparisons
@@ -236,6 +243,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 **Why**: We focus on practical LLM usage via APIs, not training from scratch.
 
 **What we DO cover**:
+
 - Using pre-trained models (OpenAI, Anthropic)
 - Prompt engineering patterns
 - Function calling and tool use
@@ -258,11 +266,13 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 ### Lab Philosophy
 
 **Labs are NOT**:
+
 - ❌ "Fill in the blank" exercises
 - ❌ Multiple choice questions
 - ❌ Theoretical problems
 
 **Labs ARE**:
+
 - ✅ Build something functional
 - ✅ Debug broken code
 - ✅ Extend working examples
@@ -270,7 +280,7 @@ No 30-minute lecture on normalization theory. You see the problem, apply the sol
 
 **Example Lab**: Build a prediction API
 
-```
+```text
 Task: Take a trained model and build a FastAPI endpoint
 
 1. Load the model from disk
@@ -281,8 +291,7 @@ Task: Take a trained model and build a FastAPI endpoint
 6. Bonus: Add request logging
 
 Success Criteria: API returns predictions for valid inputs
-```
-
+```text
 You learn by building, not by reading.
 
 ---
@@ -300,8 +309,7 @@ print("Accuracy:", model.score(X_test, y_test))
 
 # Course ends here
 
-```
-
+```text
 ### Our Teaching:
 
 ```python
@@ -335,8 +343,7 @@ def predict(data: PredictionInput):
 
 # Now you have a production system!
 
-```
-
+```text
 **Every model gets deployed. Every system gets monitored.**
 
 ---
@@ -346,6 +353,7 @@ def predict(data: PredictionInput):
 ### 1. Follow Sequentially (Don't Skip)
 
 Sections build on each other:
+
 - Section 4 (ML models) needs Section 3 (metrics)
 - Section 10 (RAG) needs Section 9 (embeddings)
 - Projects need all previous sections
@@ -362,6 +370,7 @@ Labs reinforce concepts. If you skip them, you'll struggle with projects.
 ### 4. Customize Projects
 
 The projects provide a foundation. Add your own features to stand out:
+
 - Different datasets
 - Additional endpoints
 - Better UI
@@ -370,6 +379,7 @@ The projects provide a foundation. Add your own features to stand out:
 ### 5. Build in Public
 
 Share your progress:
+
 - Push to GitHub
 - Write blog posts
 - Make demo videos
@@ -382,30 +392,32 @@ Share your progress:
 ### Recommended Schedule
 
 **Full-time (40 hrs/week)**:
+
 - Duration: 6-8 weeks
 - Pace: Complete 1-2 sections per week
 - Focus: Deep learning, customized projects
 
 **Part-time (10 hrs/week)**:
+
 - Duration: 10-12 weeks
 - Pace: Complete 1 section per week
 - Focus: Steady progress, consistent effort
 
 **Casual (5 hrs/week)**:
+
 - Duration: 20-24 weeks
 - Pace: 0.5 sections per week
 - Focus: Long-term learning, side project
 
 ### Weekly Breakdown Example (10 hrs/week)
 
-```
+```text
 Monday (2 hrs): Read transcripts, understand concepts
 Wednesday (2 hrs): Code examples, debug issues
 Friday (2 hrs): Complete labs
 Saturday (3 hrs): Work on current project
 Sunday (1 hr): Review and plan next week
-```
-
+```text
 ---
 
 ## Success Metrics

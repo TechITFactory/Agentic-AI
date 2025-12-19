@@ -12,7 +12,8 @@ Control spend while keeping quality and latency acceptable.
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) Identify cacheable calls
 2) Implement basic batching or reuse embeddings
 3) Add simple rate limit/backoff logic

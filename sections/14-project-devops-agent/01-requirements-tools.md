@@ -12,13 +12,16 @@ Define the agent’s scope and the tools it is allowed to use before building.
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) Document use cases and non-goals
 2) List tools with inputs/outputs and limits
 3) Define budgets (time/steps/cost)
 
-**Deliverable
+**Deliverable**:
+
 - Requirements doc and tool list
 
-**Checkpoint
+**Checkpoint**:
+
 Can a reviewer approve scope and tools without further clarification?

@@ -40,7 +40,7 @@ Move beyond chatbots and design agents that can plan, act, observe, and reflect 
 
 ## Section Structure
 
-```
+```text
 sections/11-agentic-ai/
 ├── README.md
 ├── 01-agents-vs-chatbots.md
@@ -50,8 +50,7 @@ sections/11-agentic-ai/
 ├── 05-memory.md
 ├── 06-multi-step-workflows.md
 └── 07-mini-lab-two-tool-agent.md
-```
-
+```text
 ## What's Next?
 
 Move to [Section 12: Project 1 - MLOps Churn System](../12-project-mlops-churn/README.md) or skip ahead to the RAG and agent portfolio projects depending on your goals.

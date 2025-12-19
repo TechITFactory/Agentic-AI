@@ -17,11 +17,13 @@ This section covers essential data science concepts you need for machine learnin
 ## Why "Minimum Must-Know"?
 
 These are concepts you'll use in EVERY ML project:
+
 - ✅ Understanding why models fail in production
 - ✅ Properly evaluating model performance
 - ✅ Avoiding common mistakes that ruin models
 
 We skip:
+
 - ❌ Deep statistical theory
 - ❌ Mathematical proofs
 - ❌ Academic research details
@@ -47,7 +49,7 @@ We skip:
 
 ## Section Structure
 
-```
+```text
 sections/03-data-science-fundamentals/
 ├── README.md
 ├── 01-what-is-a-dataset.md
@@ -67,11 +69,11 @@ sections/03-data-science-fundamentals/
         ├── data/
         ├── starter.py
         └── solution.py
-```
-
+```text
 ## Learning Objectives
 
 By the end of this section, you will:
+
 - ✅ Understand the anatomy of a dataset
 - ✅ Split data properly for model evaluation
 - ✅ Recognize overfitting and underfitting
@@ -127,17 +129,19 @@ python code/metrics_examples.py
 
 cd labs/baseline_model
 python solution.py  # After trying yourself!
-```
-
+```text
 ## Common Questions
 
 **Q: Do I need to memorize all the metrics?**
+
 A: No! Understand when to use each one. You can always look up the formulas.
 
 **Q: What if I already know train/test splits?**
+
 A: Great! Still review the data leakage section - it catches everyone.
 
 **Q: Should I read academic papers on these topics?**
+
 A: Not necessary. Focus on practical application.
 
 ## Tips for This Section

@@ -12,13 +12,16 @@ Prepare to present the project and highlight production decisions.
 
 **Time**: ~20-30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Create a 5-7 minute demo flow
 2) Summarize architecture (data → train → serve → deploy → monitor)
 3) List 3 risks and planned mitigations
 
-**Deliverable
+**Deliverable**:
+
 - Demo script/notes and one-page summary
 
-**Checkpoint
+**Checkpoint**:
+
 Could you explain this project to an interviewer in under 5 minutes with clear trade-offs?

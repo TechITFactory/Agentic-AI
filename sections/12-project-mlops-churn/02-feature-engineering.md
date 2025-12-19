@@ -12,13 +12,16 @@ Craft features that improve signal while respecting leakage constraints.
 
 **Time**: ~30-45 minutes
 
-**Tasks
+**Tasks**:
+
 1) List raw fields → engineered features
 2) Apply scaling/encoding appropriate to models
 3) Validate no target/temporal leakage
 
-**Deliverable
+**Deliverable**:
+
 - Feature spec and code/notebook implementing transformations
 
-**Checkpoint
+**Checkpoint**:
+
 Can you explain how each feature is computed without using future info?

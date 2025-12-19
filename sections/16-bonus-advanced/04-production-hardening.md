@@ -12,7 +12,8 @@ Apply a final layer of reliability and security before shipping widely.
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) Draft hardening checklist for your projects
 2) Add missing items to backlog
 3) Define rollback triggers and procedures

@@ -38,7 +38,7 @@ Optional deep dives that help you harden systems, control costs, and evaluate ag
 
 ## Section Structure
 
-```
+```text
 sections/16-bonus-advanced/
 ├── README.md
 ├── 01-finetuning-vs-rag.md
@@ -46,8 +46,7 @@ sections/16-bonus-advanced/
 ├── 03-agent-evaluation.md
 ├── 04-production-hardening.md
 └── 05-capstone-publish.md
-```
-
+```text
 ## What's Next?
 
 Use this section to polish and publish your work. Revisit earlier projects and apply the hardening and cost controls where they matter most.

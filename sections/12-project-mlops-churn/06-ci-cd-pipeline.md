@@ -12,13 +12,16 @@ Automate testing and shipping so every change is validated and build artifacts a
 
 **Time**: ~45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Author CI workflow (GitHub Actions or similar)
 2) Push built image to registry with tags
 3) (Optional) add staging deploy job
 
-**Deliverable
+**Deliverable**:
+
 - Workflow file and example run screenshot/log
 
-**Checkpoint
+**Checkpoint**:
+
 Would a failing test stop image build in your pipeline?

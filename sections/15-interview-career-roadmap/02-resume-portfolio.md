@@ -12,7 +12,8 @@ Present your projects in a way that signals production readiness.
 
 **Time**: ~25 minutes
 
-**Tasks
+**Tasks**:
+
 1) Write 2-3 bullets per project with metrics
 2) Link repos/demos/docs
 3) Tailor for ML vs AI/LLM roles

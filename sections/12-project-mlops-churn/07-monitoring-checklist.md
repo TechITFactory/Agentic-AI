@@ -12,13 +12,16 @@ Define how you’ll watch the service and detect model degradation.
 
 **Time**: ~25 minutes
 
-**Tasks
+**Tasks**:
+
 1) Choose metrics and logging fields
 2) Draft alert thresholds and owners
 3) Plan for data/label capture
 
-**Deliverable
+**Deliverable**:
+
 - Monitoring doc or dashboard sketch
 
-**Checkpoint
+**Checkpoint**:
+
 Can you describe how you’d notice drift without labels yet?

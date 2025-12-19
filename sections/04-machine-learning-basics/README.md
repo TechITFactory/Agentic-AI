@@ -35,6 +35,7 @@ Build real ML models with practical, production-ready code. Focus on algorithms 
 ## Learning Objectives
 
 By the end of this section, you will:
+
 - ✅ Build classification and regression models
 - ✅ Understand when to use each algorithm
 - ✅ Engineer features to improve model performance

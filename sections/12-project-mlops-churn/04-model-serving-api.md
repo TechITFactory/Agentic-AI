@@ -12,13 +12,16 @@ Expose the trained model via FastAPI with validation and logging ready for conta
 
 **Time**: ~45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Implement /health and /predict
 2) Validate inputs; return probabilities + labels
 3) Add structured logging and basic error handling
 
-**Deliverable
+**Deliverable**:
+
 - `api/main.py` (or similar) and sample curl requests
 
-**Checkpoint
+**Checkpoint**:
+
 Can a teammate run the API locally and get predictions with your sample payload?

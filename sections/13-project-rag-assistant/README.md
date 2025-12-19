@@ -15,7 +15,7 @@ Build a retrieval-augmented knowledge assistant that answers with citations. Thi
 
 ## Project Structure
 
-```
+```text
 13-project-rag-assistant/
 ├── data/                  # Sample documents
 ├── ingest/                # Ingestion and chunking scripts
@@ -24,8 +24,7 @@ Build a retrieval-augmented knowledge assistant that answers with citations. Thi
 ├── evaluation/            # Metrics and golden set evaluation
 ├── api/                   # Optional API wrapper for the assistant
 └── docs/                  # Setup guide and decisions
-```
-
+```text
 ## Skills Demonstrated
 
 - Design and tune RAG pipelines

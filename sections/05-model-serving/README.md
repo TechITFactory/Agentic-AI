@@ -26,6 +26,7 @@ Turn ML models into production APIs using FastAPI. Learn to serve predictions at
 ## What You'll Build
 
 A production-ready prediction API with:
+
 - Model loading and caching
 - Input validation
 - Error handling

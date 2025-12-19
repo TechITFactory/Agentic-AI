@@ -12,13 +12,16 @@ Improve hit-rate with informed parameter choices.
 
 **Time**: ~30-45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Run retrieval with multiple chunk sizes/overlaps
 2) Try different k and metadata filters
 3) Evaluate recall@k and pick defaults
 
-**Deliverable
+**Deliverable**:
+
 - Eval notebook with recall@k table and chosen params
 
-**Checkpoint
+**Checkpoint**:
+
 Can you justify your chosen chunk size and k with metrics?

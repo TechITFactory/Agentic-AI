@@ -12,7 +12,8 @@ Measure agent performance beyond “it worked once.”
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) Instrument agent steps with timings and token/cost
 2) Define success criteria per task type
 3) Log failures with repro data

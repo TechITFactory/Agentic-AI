@@ -38,7 +38,7 @@ Translate your project work into interviews and career momentum. You will build 
 
 ## Section Structure
 
-```
+```text
 sections/15-interview-career-roadmap/
 ├── README.md
 ├── 01-interview-roadmap.md
@@ -47,8 +47,7 @@ sections/15-interview-career-roadmap/
 ├── 04-system-design-rag.md
 ├── 05-system-design-agent.md
 └── 06-30-60-90-plan.md
-```
-
+```text
 ## What's Next?
 
 Move to [Section 16: Bonus](../16-bonus-advanced/README.md) for optional deep dives and hardening.

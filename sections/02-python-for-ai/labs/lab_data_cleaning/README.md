@@ -13,6 +13,7 @@ You work at a SaaS company. The data engineering team has dumped raw user activi
 **File**: `data/user_activity.csv`
 
 **Columns**:
+
 - `user_id`: Unique identifier
 - `signup_date`: When user signed up
 - `last_login`: Last login timestamp
@@ -74,18 +75,20 @@ Clean the dataset following these steps:
 
 Your script should print:
 
-```
+```text
 Data Cleaning Report
 ====================
 Original dataset: 1000 rows, 9 columns
 
 Issues found:
+
 - Missing values: sessions=50, support_tickets=30, revenue=45
 - Negative revenue: 12 rows
 - Extreme outliers in features_used: 8 rows
 - Inconsistent subscription types: Fixed
 
 Cleaning applied:
+
 - Filled missing values
 - Removed 20 bad rows (negative revenue + outliers)
 - Standardized text fields
@@ -93,8 +96,7 @@ Cleaning applied:
 
 Final dataset: 980 rows, 12 columns
 Saved to: data/user_activity_cleaned.csv
-```
-
+```text
 ## Starter Code
 
 Use `starter.py` as your starting point. It has the structure and TODO comments to guide you.
@@ -106,6 +108,7 @@ Check `solution.py` **only after** you've tried solving it yourself!
 ## Evaluation
 
 Your code should:
+
 - ✅ Handle all missing values appropriately
 - ✅ Remove bad data (negative revenue)
 - ✅ Fix inconsistent values

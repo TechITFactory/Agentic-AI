@@ -41,14 +41,14 @@ We use features from Python 3.10+ (type hints, match statements) and newer libra
 
 ### Windows
 
-**Option 1: Microsoft Store (Recommended)**
-```bash
+#### Option 1: Microsoft Store (Recommended)
 
+```bash
 # Search "Python 3.11" in Microsoft Store and install
 
-```
+```text
+#### Option 2: Official Installer
 
-**Option 2: Official Installer**
 1. Visit https://www.python.org/downloads/
 2. Download Python 3.11 or 3.12 installer
 3. **Important**: Check "Add Python to PATH" during installation
@@ -58,11 +58,11 @@ python --version
 
 # Should show Python 3.10 or higher
 
-```
-
+```text
 ### macOS
 
-**Option 1: Homebrew (Recommended)**
+#### Option 1: Homebrew (Recommended)
+
 ```bash
 
 # Install Homebrew if not installed
@@ -76,9 +76,9 @@ brew install python@3.11
 # Verify
 
 python3 --version
-```
+```text
+#### Option 2: Official Installer
 
-**Option 2: Official Installer**
 1. Visit https://www.python.org/downloads/
 2. Download macOS installer
 3. Run the installer
@@ -99,8 +99,7 @@ sudo apt install python3.11 python3.11-venv python3-pip
 # Verify
 
 python3.11 --version
-```
-
+```text
 ### Verify Installation
 
 ```bash
@@ -116,8 +115,7 @@ pip --version  # or pip3 --version
 # Test Python
 
 python -c "print('Python is working!')"
-```
-
+```text
 ---
 
 ## 2. VS Code Installation
@@ -171,38 +169,38 @@ Open VS Code and install these extensions (Ctrl+Shift+X / Cmd+Shift+X):
 
 ### Windows
 
-**Option 1: Git for Windows (Recommended)**
+#### Option 1: Git for Windows (Recommended)
+
 ```bash
 
 # Download from https://git-scm.com/download/win
 
 # Run installer with default settings
 
-```
+```text
+#### Option 2: GitHub Desktop
 
-**Option 2: GitHub Desktop**
 - More user-friendly GUI
 - Download from https://desktop.github.com/
 
 ### macOS
 
-**Option 1: Homebrew**
+#### Option 1: Homebrew
+
 ```bash
 brew install git
-```
+```text
+#### Option 2: Xcode Command Line Tools
 
-**Option 2: Xcode Command Line Tools**
 ```bash
 xcode-select --install
-```
-
+```text
 ### Linux (Ubuntu/Debian)
 
 ```bash
 sudo apt update
 sudo apt install git
-```
-
+```text
 ### Verify Installation
 
 ```bash
@@ -210,8 +208,7 @@ git --version
 
 # Should show git version 2.x or higher
 
-```
-
+```text
 ### Configure Git
 
 ```bash
@@ -224,8 +221,7 @@ git config --global user.email "your.email@example.com"
 # Verify configuration
 
 git config --list
-```
-
+```text
 ---
 
 ## 4. Docker Desktop Installation
@@ -240,6 +236,7 @@ git config --list
 ### Windows
 
 **Requirements**:
+
 - Windows 10/11 Pro, Enterprise, or Education
 - WSL 2 enabled (we'll set this up)
 
@@ -254,9 +251,9 @@ wsl --install
 
 # Restart computer
 
-```
-
+```text
 2. **Install Docker Desktop**:
+
 - Download from https://www.docker.com/products/docker-desktop
 - Run installer
 - Start Docker Desktop
@@ -265,10 +262,12 @@ wsl --install
 ### macOS
 
 **Requirements**:
+
 - macOS 10.15 or higher
 - Apple Silicon or Intel chip
 
 **Steps**:
+
 1. Download from https://www.docker.com/products/docker-desktop
 2. Install Docker Desktop
 3. Start Docker Desktop
@@ -294,8 +293,7 @@ sudo usermod -aG docker $USER
 # Log out and back in, then verify
 
 docker --version
-```
-
+```text
 ### Verify Docker Installation
 
 ```bash
@@ -310,11 +308,11 @@ docker run hello-world
 
 # Should see "Hello from Docker!" message
 
-```
-
+```text
 ### Docker Desktop Settings
 
 **Recommended settings**:
+
 - Resources → Memory: 4GB minimum (8GB better)
 - Resources → CPUs: 2 minimum (4 better)
 - Enable Kubernetes (optional, for Section 6)
@@ -342,8 +340,7 @@ cd Agentic-AI
 # Verify you're on the right branch
 
 git branch
-```
-
+```text
 ### Using VS Code
 
 1. Open VS Code
@@ -375,6 +372,7 @@ git branch
 ### Create Virtual Environment
 
 **Windows**:
+
 ```bash
 
 # Navigate to course directory
@@ -391,9 +389,9 @@ venv\Scripts\activate
 
 # You should see (venv) in your prompt
 
-```
-
+```text
 **macOS/Linux**:
+
 ```bash
 
 # Navigate to course directory
@@ -410,8 +408,7 @@ source venv/bin/activate
 
 # You should see (venv) in your prompt
 
-```
-
+```text
 ### Install Course Dependencies
 
 ```bash
@@ -430,8 +427,7 @@ pip install -r requirements.txt
 
 # This will take a few minutes
 
-```
-
+```text
 ### Verify Installation
 
 ```bash
@@ -443,8 +439,7 @@ python -c "import numpy; import pandas; import sklearn; print('All imports succe
 # List installed packages
 
 pip list
-```
-
+```text
 ---
 
 ## 7. Jupyter Notebook Setup
@@ -463,8 +458,7 @@ jupyter lab
 
 # Browser should open automatically
 
-```
-
+```text
 ### VS Code Jupyter Integration
 
 1. Open any `.ipynb` file in VS Code
@@ -500,8 +494,7 @@ df = pd.DataFrame({
     'B': [4, 5, 6]
 })
 print(df)
-```
-
+```text
 If all cells run without errors, you're good to go!
 
 ---
@@ -521,18 +514,18 @@ You'll need these for Sections 8-14 (LLMs, RAG, Agents):
 ### Environment Variables
 
 **Create `.env` file in project root**:
+
 ```bash
 
 # In Agentic-AI directory
 
 touch .env  # Creates .env file
-```
-
+```text
 **Add your API keys** (we'll do this in Section 8):
-```
-OPENAI_API_KEY=sk-your-key-here
-```
 
+```text
+OPENAI_API_KEY=sk-your-key-here
+```text
 **Important**: `.env` is in `.gitignore` - your keys won't be committed to Git.
 
 ---
@@ -548,6 +541,7 @@ OPENAI_API_KEY=sk-your-key-here
 ### Windows Terminal (Windows Only)
 
 Much better than Command Prompt:
+
 - Download from Microsoft Store
 - Search "Windows Terminal"
 - Set as default
@@ -557,8 +551,7 @@ Much better than Command Prompt:
 Better terminal experience:
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
+```text
 ---
 
 ## 10. Verification Checklist
@@ -589,8 +582,7 @@ jupyter --version        # Should show version info
 # Check if in virtual environment
 
 python -c "import sys; print('✅ Virtual env' if 'venv' in sys.prefix else '❌ Not in venv')"
-```
-
+```text
 ---
 
 ## Troubleshooting
@@ -598,10 +590,12 @@ python -c "import sys; print('✅ Virtual env' if 'venv' in sys.prefix else '❌
 ### Python Command Not Found
 
 **Windows**:
+
 - Reinstall Python, check "Add to PATH"
 - Or use `py` instead of `python`
 
 **macOS/Linux**:
+
 - Use `python3` instead of `python`
 - Add alias: `alias python=python3`
 
@@ -619,20 +613,22 @@ pip install --upgrade setuptools wheel
 
 # Then retry installation
 
-```
-
+```text
 ### Docker Won't Start
 
 **Windows**:
+
 - Enable virtualization in BIOS
 - Ensure WSL 2 is installed
 - Restart Docker Desktop
 
 **macOS**:
+
 - Check System Preferences → Security & Privacy
 - Allow Docker
 
 **Linux**:
+
 - Check Docker service: `sudo systemctl status docker`
 - Start if needed: `sudo systemctl start docker`
 
@@ -646,18 +642,17 @@ sudo usermod -aG docker $USER
 
 # Log out and back in
 
-```
-
+```text
 ### Virtual Environment Not Activating
 
 **Windows PowerShell**:
+
 ```powershell
 
 # May need to allow script execution
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
+```text
 **Then try activating again**.
 
 ---
@@ -700,20 +695,17 @@ You've got your environment set up! Now let's walk through the repository struct
 
 ```bash
 deactivate
-```
-
+```text
 ### Update Course Repository
 
 ```bash
 git pull origin main
-```
-
+```text
 ### Reinstall Dependencies
 
 ```bash
 pip install -r requirements.txt --upgrade
-```
-
+```text
 ---
 
 **You're all set!** Let's explore the repository structure next.

@@ -12,7 +12,8 @@ Practice designing a robust RAG system for interviews.
 
 **Time**: ~30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Draw an enterprise RAG design
 2) Address scaling, caching, eval, security
 3) Prepare trade-off talking points

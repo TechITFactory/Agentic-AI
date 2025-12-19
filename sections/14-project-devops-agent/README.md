@@ -14,7 +14,7 @@ Build an agentic service that automates DevOps-style tasks safely. This project 
 
 ## Project Structure
 
-```
+```text
 14-project-devops-agent/
 ├── tools/                 # Tool implementations (log, k8s, yaml)
 ├── agent/                 # Orchestration, planning, reflection
@@ -22,8 +22,7 @@ Build an agentic service that automates DevOps-style tasks safely. This project 
 ├── api/                   # Service wrapper (optional)
 ├── tests/                 # Safety and regression tests
 └── docs/                  # Usage, limits, demo guide
-```
-
+```text
 ## Skills Demonstrated
 
 - Design safe, deterministic tools

@@ -12,7 +12,8 @@ Decide when to fine-tune vs use retrieval so you spend effort and budget wisely.
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) List scenarios favoring RAG vs fine-tuning
 2) Estimate cost/time differences
 3) Create a quick decision flowchart

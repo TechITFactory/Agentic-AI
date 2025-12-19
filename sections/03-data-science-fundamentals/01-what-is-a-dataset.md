@@ -34,12 +34,13 @@ Define the building blocks of any ML problem so you reason correctly about data.
 
 ### Tiny example
 
-```
 customer_id | age | tenure_months | contract_type | churn
+
 ---------------------------------------------------------
+
 123         | 42  | 18            | month-to-month| 1
 124         | 30  | 6             | one-year      | 0
-```
+
 - Features: age, tenure_months, contract_type
 - Label: churn
 

@@ -17,6 +17,7 @@ Clarify which role you want so you can focus your practice and tailor portfolio 
 ## The Confusion in AI Job Titles
 
 If you've looked at AI job postings, you've probably seen:
+
 - Data Scientist
 - ML Engineer
 - AI Engineer
@@ -39,12 +40,11 @@ If you've looked at AI job postings, you've probably seen:
 
 ### Typical Day
 
-```
+```text
 Morning: Analyze user behavior data in SQL + Pandas
 Afternoon: Build prototype model in notebook
 Evening: Create PowerPoint with findings for executives
-```
-
+```text
 ### Skills Needed
 
 - Strong statistics and math
@@ -84,12 +84,11 @@ Junior DS → Senior DS → Lead DS → Head of Data Science
 
 ### Typical Day
 
-```
+```text
 Morning: Debug model serving API latency issue
 Afternoon: Set up CI/CD pipeline for model deployment
 Evening: Review training pipeline PR and discuss architecture
-```
-
+```text
 ### Skills Needed
 
 - Software engineering (clean code, testing, Git)
@@ -130,12 +129,11 @@ Junior MLE → Senior MLE → Staff MLE → ML Platform Lead
 
 ### Typical Day
 
-```
+```text
 Morning: Improve RAG retrieval quality for doc search
 Afternoon: Build agent with function calling
 Evening: Add guardrails to prevent prompt injection
-```
-
+```text
 ### Skills Needed
 
 - Software engineering (APIs, backends)
@@ -175,12 +173,11 @@ AI Engineer → Senior AI Engineer → AI Architect → Head of AI Products
 
 ### Typical Day
 
-```
+```text
 Morning: Fine-tune model on company-specific data
 Afternoon: Build evaluation suite for prompt variations
 Evening: Optimize embedding model for better retrieval
-```
-
+```text
 ### Skills Needed
 
 - Deep LLM knowledge (architectures, training)
@@ -220,12 +217,11 @@ LLM Engineer → Senior LLM Engineer → LLM Platform Lead
 
 ### Typical Day
 
-```
+```text
 Morning: Debug model training job failures
 Afternoon: Set up monitoring for model drift
 Evening: Build self-service API for model deployment
-```
-
+```text
 ### Skills Needed
 
 - Strong DevOps background (CI/CD, K8s)
@@ -270,18 +266,21 @@ MLOps Engineer → Senior MLOps → MLOps Lead → ML Platform Architect
 **Primary Target**: **ML Engineer + AI Engineer**
 
 You'll learn to:
+
 - ✅ Build and deploy traditional ML models (ML Engineer)
 - ✅ Create RAG and agent systems (AI Engineer)
 - ✅ Use MLOps practices (CI/CD, monitoring)
 - ✅ Write production-quality code
 
 **You'll be able to apply for**:
+
 - ML Engineer roles
 - AI Engineer roles
 - LLM Engineer roles (with more focus on evals)
 - MLOps Engineer roles (with more DevOps depth)
 
 **You WON'T be ready for**:
+
 - Pure Data Scientist roles (need more stats/business)
 - Research Scientist roles (need PhD-level ML)
 - Director-level roles (need years of experience)
@@ -340,15 +339,18 @@ You'll learn to:
 You'll be qualified for:
 
 **Entry-Level Roles**:
+
 - Junior ML Engineer
 - AI Engineer
 - ML Platform Engineer
 
 **With Portfolio Projects**:
+
 - Mid-level ML Engineer (1-2 years exp)
 - Senior AI Engineer (if you customize projects)
 
 **Not Quite There Yet**:
+
 - Staff/Principal Engineer (need real-world experience)
 - Research Scientist (need advanced ML degree)
 
@@ -359,12 +361,14 @@ You'll be qualified for:
 **This course won't make you a senior engineer overnight.**
 
 But it will:
+
 - ✅ Give you production-ready skills
 - ✅ Build 3 portfolio projects for interviews
 - ✅ Teach you what companies actually use
 - ✅ Position you for entry/mid-level roles
 
 **Your next steps after**:
+
 1. Get your first role (entry-level is fine)
 2. Ship real projects at a company
 3. Specialize based on what you enjoy

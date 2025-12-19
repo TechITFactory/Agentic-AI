@@ -12,13 +12,16 @@ Implement deterministic tools that the agent will call.
 
 **Time**: ~45-60 minutes
 
-**Tasks
+**Tasks**:
+
 1) Implement log analyzer (filter/search patterns)
 2) Implement k8s helper (safe, read-focused queries)
 3) Implement YAML generator with schema constraints
 
-**Deliverable
+**Deliverable**:
+
 - Tool code with docstrings and examples
 
-**Checkpoint
+**Checkpoint**:
+
 Would any tool perform unsafe mutations or unbounded operations?

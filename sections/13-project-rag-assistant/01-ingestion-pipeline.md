@@ -12,13 +12,16 @@ Get documents into a clean, chunkable format with metadata preserved.
 
 **Time**: ~30-45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Build ingestion for PDF/MD
 2) Preserve source, path, and timestamps in metadata
 3) Write cleaned text out for chunking
 
-**Deliverable
+**Deliverable**:
+
 - Ingestion script/notebook and sample output with metadata
 
-**Checkpoint
+**Checkpoint**:
+
 Can you show that each document’s source info is retained for citations?

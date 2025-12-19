@@ -12,7 +12,8 @@ Show you can design an agentic system with safety and observability.
 
 **Time**: ~30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Sketch agent architecture (API, tools, guardrails, memory)
 2) Address safety, budgets, observability
 3) Prepare trade-offs

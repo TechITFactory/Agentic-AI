@@ -12,13 +12,16 @@ Expose the agent via an API with the same production discipline as the ML servic
 
 **Time**: ~45-60 minutes
 
-**Tasks
+**Tasks**:
+
 1) Wrap agent in an API endpoint
 2) Containerize and run locally
 3) (Optional) Deploy to K8s with probes
 
-**Deliverable
+**Deliverable**:
+
 - API wrapper code, Dockerfile, and manifests
 
-**Checkpoint
+**Checkpoint**:
+
 Can a user call the agent API and see bounded, logged tool calls?

@@ -12,13 +12,16 @@ Define the churn prediction problem, target variable, and data you will use so t
 
 **Time**: ~20 minutes
 
-**Tasks
+**Tasks**:
+
 1) Describe business goal and label definition
 2) Document dataset schema, splits, and leakage risks
 3) Choose primary metrics (e.g., F1/PR-AUC)
 
-**Deliverable
+**Deliverable**:
+
 - Problem brief with label definition, metric, and data notes
 
-**Checkpoint
+**Checkpoint**:
+
 Can any teammate restate the goal and label without ambiguity?

@@ -12,13 +12,16 @@ Prepare the vector store that powers retrieval.
 
 **Time**: ~30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Generate embeddings for chunks
 2) Upsert into vector DB with metadata
 3) Sanity-check counts and dimensions
 
-**Deliverable
+**Deliverable**:
+
 - Index build script and verification output
 
-**Checkpoint
+**Checkpoint**:
+
 Does the number of vectors equal your chunk count?

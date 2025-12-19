@@ -12,7 +12,8 @@ Prepare concise answers to recurring questions.
 
 **Time**: ~30 minutes
 
-**Tasks
+**Tasks**:
+
 1) Draft answers for 10 core ML/LLM/RAG/agent questions
 2) Write STAR stories for each project
 3) Rehearse aloud

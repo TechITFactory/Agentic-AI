@@ -12,13 +12,16 @@ Quantify retrieval and answer quality for your assistant.
 
 **Time**: ~30-45 minutes
 
-**Tasks
+**Tasks**:
+
 1) Build golden set (queries → relevant sources)
 2) Compute recall@k for tuned settings
 3) Collect a few qualitative Q/A with citations
 
-**Deliverable
+**Deliverable**:
+
 - Evaluation report (markdown) with metrics and examples
 
-**Checkpoint
+**Checkpoint**:
+
 Can you show improvement over a previous retrieval configuration with numbers?

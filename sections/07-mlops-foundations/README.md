@@ -43,7 +43,7 @@ Build the habits and scaffolding that keep ML systems reliable. You will define 
 
 ## Section Structure
 
-```
+```text
 sections/07-mlops-foundations/
 ├── README.md
 ├── 01-mlops-vs-devops.md
@@ -54,8 +54,7 @@ sections/07-mlops-foundations/
 ├── 06-model-versioning.md
 ├── 07-monitoring-basics.md
 └── 08-mini-project-cicd.md
-```
-
+```text
 ## What's Next?
 
 Move to [Section 8: Intro to LLMs](../08-intro-llms/README.md) to learn modern LLM fundamentals.

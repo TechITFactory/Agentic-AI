@@ -12,14 +12,17 @@ Train candidate models, compare against baselines, and pick a champion with evid
 
 **Time**: ~60-90 minutes
 
-**Tasks
+**Tasks**:
+
 1) Prepare train/val/test splits
 2) Train baseline (logistic regression) and a stronger model (forest/XGBoost)
 3) Record metrics (F1, PR-AUC) and confusion matrices
 4) Choose champion and log params/seed
 
-**Deliverable
+**Deliverable**:
+
 - Training notebook/script, metrics table, and saved artifacts
 
-**Checkpoint
+**Checkpoint**:
+
 Can you justify the champion model choice with metrics and reproducibility details?
