@@ -1,4 +1,4 @@
-# Repository Walkthrough
+﻿# Repository Walkthrough
 
 ## Why this lesson
 
@@ -6,563 +6,107 @@ Learn how the repo is organized so you can find lessons, code, and labs quickly 
 
 ## Outcomes
 
-- ✅ Know the folder layout and how sections are structured
-- ✅ Can run examples, labs, and notebooks from the right paths
-- ✅ Have a personal plan to track progress (branching or checklist)
+-  Know the folder layout and how sections are structured
+-  Can run examples, labs, and notebooks from the right paths
+-  Have a personal plan to track progress (branching or checklist)
 
 **Time**: ~10 minutes
 
 **Prerequisites**: Tools installed and repo cloned
 
-## Repository Structure
+---
 
-Let's explore how the course repository is organized and how to navigate it effectively.
+##  Your Textbook and Lab Bench
+
+This repository is not just a collection of files. It is your **interactive textbook** and your **laboratory bench**.
+
+We have designed the structure to be intuitive, but it helps to know where things are so you don't get lost.
+
+---
+
+##  The High-Level Structure
+
+When you open the `Agentic-AI` folder, you will see:
 
 ```text
 Agentic-AI/
-├── sections/              # All course sections
-│   ├── 01-welcome-setup/
-│   ├── 02-python-for-ai/
-│   ├── 03-data-science-fundamentals/
-│   ├── ... (through 16)
-├── datasets/              # Sample datasets for labs
-├── shared/                # Shared utilities
-├── requirements.txt       # Python dependencies
-├── .gitignore            # Git ignore rules
-└── README.md             # Course overview
-```text
-## Section Structure
+ sections/              #  The Core Content
+    01-welcome-setup/
+    02-python-for-ai/
+    ...
+    16-bonus-advanced/
+ datasets/              #  Data for Labs
+    customer_churn.csv
+    ...
+ shared/                #  Helper Code
+    utils.py
+ requirements.txt       #  Dependencies
+ README.md              #  Home
+```
 
-Each section follows the same structure:
+### `sections/`
+This is where you will spend 95% of your time. Each folder corresponds to a module in the course. They are numbered `01` to `16` so you can follow them in order.
 
-```text
-sections/XX-section-name/
-├── README.md              # Section overview
-├── 01-topic-name.md      # Lesson transcript
-├── 02-another-topic.md   # Another lesson
-├── labs/                 # Hands-on labs
-│   ├── lab1_name/
-│   │   ├── README.md     # Lab instructions
-│   │   ├── starter.py    # Starting code
-│   │   └── solution.py   # Solution (don't peek!)
-├── code/                 # Code examples
-│   └── example1.py
-└── assets/               # Images, diagrams (if needed)
-```text
-## How to Navigate the Course
+### `datasets/`
+We provide real-world datasets for the projects. You won't need to scrape data yourself unless you want to.
 
-### 1. Start with Section README
-
-Each section has a `README.md` that includes:
-
-- Learning objectives
-- List of lessons
-- Estimated time
-- Prerequisites
-
-**Always read this first!**
-
-### 2. Follow Lessons Sequentially
-
-Lessons are numbered (01, 02, 03...) for a reason - they build on each other.
-
-**Example**: In Section 4 (Machine Learning Basics)
-
-```text
-01-linear-regression.md       → Understand basics
-02-decision-trees.md          → Build on regression
-03-random-forests.md          → Ensemble of trees
-04-xgboost.md                 → Advanced ensemble
-05-mini-project-churn.md      → Apply everything
-```text
-### 3. Code Along, Don't Just Read
-
-When you see code in a lesson:
-
-```python
-
-# DON'T just read this
-
-model = LogisticRegression()
-model.fit(X_train, y_train)
-
-# DO: Type it yourself, run it, experiment!
-
-```text
-**Pro tip**: Type code yourself instead of copy-pasting. Builds muscle memory.
-
-### 4. Complete Labs Before Moving On
-
-Labs reinforce concepts. If you skip them, you'll struggle with later sections.
-
-**Lab workflow**:
-
-1. Read lab README
-2. Try coding solution yourself (use `starter.py` if provided)
-3. Get stuck? Review lesson
-4. Still stuck? Check solution
-5. Understand solution, then code it again from scratch
-
-### 5. Projects Are Cumulative
-
-The three main projects (Sections 12-14) use everything from previous sections:
-
-**Project 1 (MLOps Churn)** needs:
-
-- Section 2: Python/Pandas
-- Section 3: Data science concepts
-- Section 4: ML models
-- Section 5: Model serving
-- Section 6: Docker/K8s
-- Section 7: CI/CD
-
-**Don't skip sections!**
+### `shared/`
+Contains utility functions (like logger setups or common plotting functions) that we reuse across multiple lessons.
 
 ---
 
-## Using the Course Materials
+##  Anatomy of a Section
 
-### Markdown Files (.md)
+Let's look inside a typical section, like `04-machine-learning-basics`:
 
-All lessons are in Markdown format:
+```text
+sections/04-machine-learning-basics/
+ README.md              #  Start Here!
+ 01-linear-regression.md #  Lesson Transcript
+ 02-decision-trees.md
+ code/                  #  Runnable Examples
+    train_model.py
+ labs/                  #  Hands-on Exercises
+     lab_churn_prediction/
+         README.md      # Lab Instructions
+         starter.py     # Broken/Empty code for you to fix
+         solution.py    # The answer key
+```
 
-- Read in VS Code (opens in preview)
-- Read on GitHub (nice formatting)
-- Read in any text editor
+### How to use a Section:
+1.  **Read the README**: It tells you what you will learn and the estimated time.
+2.  **Read the Lesson**: Open `01-topic.md`. Read the concept and the code snippets.
+3.  **Run the Code**: Go to the `code/` folder and run the examples. Don't just read them!
+    ```bash
+    cd sections/04-machine-learning-basics/code
+    python train_model.py
+    ```
+4.  **Do the Lab**: Go to `labs/`. Read the instructions. Try to solve it in `starter.py`. If you get stuck, peek at `solution.py`.
 
-**VS Code tip**: Press `Ctrl+Shift+V` (Cmd+Shift+V on Mac) for preview.
+---
 
-### Python Files (.py)
+##  Pro Tips for Success
 
-Code examples you can run directly:
+### 1. Code Along
+When you see a code block in a lesson, **type it out**. Do not copy-paste. Typing builds muscle memory.
 
+### 2. Use Branches
+Treat this course like a real software project. Create a git branch for your work:
 ```bash
+git checkout -b my-learning-journey
+```
+This way, you can mess up the code, delete things, and experiment without breaking the original files.
 
-# Navigate to section
-
-cd sections/02-python-for-ai/code
-
-# Run example
-
-python example_pandas.py
-```text
-### Jupyter Notebooks (.ipynb)
-
-Interactive notebooks for exploration:
-
-```bash
-
-# Launch Jupyter
-
-jupyter notebook
-
-# Navigate to section and open .ipynb file
-
-```text
-**Or** open directly in VS Code (if Jupyter extension installed).
-
-### Lab Folders
-
-Each lab is self-contained:
-
-```text
-labs/lab1_data_cleaning/
-├── README.md          # Instructions
-├── data/             # Sample data
-├── starter.py        # Your starting point
-└── solution.py       # Complete solution
-```text
-**Workflow**:
-
-1. Read README.md
-2. Work in starter.py (or create your own file)
-3. Check solution.py when done (or stuck)
+### 3. The "Solution" Temptation
+It is very tempting to just look at `solution.py`. **Don't do it.**
+Struggling with the code is where the learning happens. Only look at the solution after you have tried for at least 15 minutes.
 
 ---
 
-## Datasets Directory
+##  Ready to Launch?
 
-Sample datasets for labs and projects:
+You have the roadmap. You have the tools. You know the terrain.
 
-```text
-datasets/
-├── churn/            # Customer churn data (Section 4, 12)
-├── documents/        # Sample docs for RAG (Section 10, 13)
-├── logs/            # System logs (Section 2, 14)
-└── README.md        # Dataset descriptions
-```text
-**Important**: Some datasets are generated by scripts in their respective sections.
+It's time to write some code.
 
----
-
-## Shared Utilities
-
-Common code used across sections:
-
-```text
-shared/
-├── utils.py          # General utilities
-├── ml_helpers.py     # ML helper functions
-├── api_helpers.py    # API utilities
-└── README.md         # Usage guide
-```text
-**When to use**:
-
-- During projects to avoid code duplication
-- When the lesson says "use the shared utility"
-- For your own extensions
-
----
-
-## How to Track Your Progress
-
-### Option 1: Git Branches (Recommended)
-
-Create a branch for your work:
-
-```bash
-
-# Create your branch
-
-git checkout -b my-progress
-
-# Make changes, complete labs
-
-# ... your work ...
-
-# Commit your progress
-
-git add .
-git commit -m "Completed Section 2 labs"
-
-# Push to your fork (if you forked the repo)
-
-git push origin my-progress
-```text
-**Benefits**:
-
-- Version control for your work
-- Can revert if something breaks
-- Shows your progress in GitHub
-
-### Option 2: Checklist in README
-
-Copy this checklist to a file called `MY_PROGRESS.md`:
-
-```markdown
-
-# My Learning Progress
-
-## Foundation
-
-- [ ] Section 1: Welcome & Setup
-- [ ] Section 2: Python for AI
-- [ ] Section 3: Data Science Fundamentals
-
-## ML Engineering
-
-- [ ] Section 4: Machine Learning Basics
-- [ ] Section 5: Model Serving
-- [ ] Section 6: Containers & Deployment
-- [ ] Section 7: MLOps Foundations
-
-## Modern AI
-
-- [ ] Section 8: Intro to LLMs
-- [ ] Section 9: Embeddings & Vector DBs
-- [ ] Section 10: RAG End-to-End
-- [ ] Section 11: Agentic AI
-
-## Projects
-
-- [ ] Section 12: MLOps Churn System
-- [ ] Section 13: RAG Knowledge Assistant
-- [ ] Section 14: DevOps Agent
-
-## Career
-
-- [ ] Section 15: Interview Prep
-- [ ] Section 16: Bonus Content
-
-```text
-Update as you go!
-
----
-
-## Working with Code Examples
-
-### Running Examples
-
-Most examples are standalone:
-
-```bash
-
-# Activate virtual environment first!
-
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-
-# Navigate to section
-
-cd sections/04-machine-learning-basics/code
-
-# Run example
-
-python linear_regression_example.py
-```text
-### Modifying Examples
-
-**Encouraged!** Experiment with code:
-
-```python
-
-# Original example
-
-model = RandomForestClassifier(n_estimators=100)
-
-# Try different parameters
-
-model = RandomForestClassifier(n_estimators=200, max_depth=10)
-
-# See how it changes results
-
-```text
-**Best way to learn**: Break things, fix them, understand why.
-
-### Creating Your Own Files
-
-Feel free to create your own files:
-
-```bash
-
-# Create your playground
-
-mkdir sections/XX-section-name/my_experiments
-
-# Add to .gitignore if you don't want to commit
-
-echo "my_experiments/" >> .gitignore
-```text
----
-
-## Lab Solutions: When to Use Them
-
-### The Right Approach
-
-1. **First**: Try solving the lab yourself (30-60 minutes)
-2. **If stuck**: Review the lesson material
-3. **Still stuck**: Look at solution for hints (not full solution)
-4. **Last resort**: Study the complete solution
-
-### After Seeing Solution
-
-**Don't just move on!**
-
-1. Close the solution file
-2. Code it again from scratch
-3. Make sure you understand every line
-4. Modify it (try different approaches)
-
-**Learning happens when you struggle, not when you copy.**
-
----
-
-## Project Structure
-
-Projects (Sections 12-14) have more complex structure:
-
-```text
-sections/12-project-mlops-churn/
-├── README.md              # Project overview
-├── data/                 # Project data
-├── notebooks/            # Exploration notebooks
-├── src/                  # Source code
-│   ├── data_processing.py
-│   ├── train.py
-│   ├── serve.py
-│   └── ...
-├── tests/                # Unit tests
-├── docker/               # Docker configs
-├── k8s/                  # Kubernetes manifests
-├── .github/workflows/    # CI/CD configs
-└── docs/                 # Project documentation
-```text
-**These are production-style projects.**
-
----
-
-## Using Git Effectively
-
-### Keep Course Repo Updated
-
-```bash
-
-# Add upstream (original repo) as remote
-
-git remote add upstream https://github.com/TechITFactory/Agentic-AI.git
-
-# Fetch updates
-
-git fetch upstream
-
-# Merge updates into your branch
-
-git merge upstream/main
-```text
-### Commit Your Work Regularly
-
-```bash
-
-# After completing a lab
-
-git add sections/02-python-for-ai/labs/lab1_cleaning/my_solution.py
-git commit -m "Completed data cleaning lab"
-
-# After completing a section
-
-git add sections/02-python-for-ai/
-git commit -m "Finished Section 2: Python for AI"
-```text
-### Don't Commit Large Files
-
-Already handled by `.gitignore`:
-
-- Model files (*.pkl, *.h5)
-- Large datasets
-- Virtual environment
-- Cache files
-
----
-
-## Tips for Success
-
-### 1. Create a Learning Schedule
-
-```text
-Week 1: Section 1-2 (Foundation)
-Week 2: Section 3-4 (ML Basics)
-...
-```text
-Stick to it!
-
-### 2. Take Notes
-
-Create a `NOTES.md` file:
-
-```markdown
-
-# My Notes
-
-## Section 2: Python for AI
-
-**Key Learnings**:
-
-- Pandas read_csv is simple: `pd.read_csv('file.csv')`
-- Always check data types: `df.dtypes`
-- Filter with boolean indexing: `df[df['age'] > 30]`
-
-**Mistakes I Made**:
-
-- Forgot to handle missing values before training
-- Solution: Use `df.fillna()` or `df.dropna()`
-
-```text
-### 3. Build a Portfolio Repo
-
-As you complete projects, create a separate portfolio repo:
-
-```text
-my-ai-portfolio/
-├── mlops-churn/       # Project 1
-├── rag-assistant/     # Project 2
-├── devops-agent/      # Project 3
-└── README.md          # Portfolio overview
-```text
-**Share this in job applications!**
-
-### 4. Join the Community
-
-- **GitHub Discussions**: Ask questions, help others
-- **GitHub Issues**: Report bugs, suggest improvements
-- **Twitter/LinkedIn**: Share your progress (#AgenticAI)
-
----
-
-## Common Questions
-
-### Q: Can I use a different IDE?
-
-**A**: Yes! PyCharm, Sublime, even Vim/Emacs. VS Code is just recommended.
-
-### Q: Can I use different libraries?
-
-**A**: For learning, stick to course libraries. For projects, customize as you like.
-
-### Q: Should I take notes?
-
-**A**: Yes! Either in Markdown files or a physical notebook. Helps retention.
-
-### Q: Can I skip sections I already know?
-
-**A**: Quick review is fine, but don't skip labs. They may use different approaches than you know.
-
-### Q: What if a dependency breaks?
-
-**A**: Check `requirements.txt` versions. Open an issue if it's a course problem.
-
----
-
-## Quick Reference
-
-### Navigate to Section
-
-```bash
-cd sections/XX-section-name
-```text
-### Run Python File
-
-```bash
-python filename.py
-```text
-### Launch Jupyter
-
-```bash
-jupyter notebook
-
-# or
-
-jupyter lab
-```text
-### Activate Virtual Environment
-
-```bash
-source venv/bin/activate  # macOS/Linux
-venv\Scripts\activate     # Windows
-```text
-### Update Dependencies
-
-```bash
-pip install -r requirements.txt --upgrade
-```text
----
-
-## What's Next?
-
-You now understand how the course is structured and how to navigate it effectively.
-
-**Ready to start learning?** Head to **[Section 2: Python for AI](../02-python-for-ai/README.md)**
-
----
-
-## Remember
-
-**The course is self-paced. There's no rush.**
-
-- Take your time to understand concepts
-- Complete all labs
-- Experiment with code
-- Build all three projects
-- Customize to make them your own
-
-**Your portfolio is what gets you hired, not how fast you finish.**
-
-Happy learning! 🚀
+**Next Section**: [Section 2: Python for AI](../02-python-for-ai/README.md)
