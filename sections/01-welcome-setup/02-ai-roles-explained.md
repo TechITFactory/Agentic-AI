@@ -1,5 +1,17 @@
 # AI Roles Explained: Find Your Path
 
+## Why this lesson
+Clarify which role you want so you can focus your practice and tailor portfolio projects.
+
+## Outcomes
+- ✅ Can distinguish DS, ML Engineer, AI/LLM Engineer, and MLOps responsibilities
+- ✅ Have a target role for this course
+- ✅ Know which projects emphasize each path
+
+**Time**: ~20 minutes
+
+**Prerequisites**: None
+
 ## The Confusion in AI Job Titles
 
 If you've looked at AI job postings, you've probably seen:

@@ -1,5 +1,17 @@
 # Learning Path: "Minimum DS + Maximum Practical"
 
+## Why this lesson
+See how the course is sequenced so you can budget time and avoid skipping foundations needed for later projects.
+
+## Outcomes
+- ✅ Understand the phased roadmap (Foundation → ML Engineering → Modern AI → Projects → Career)
+- ✅ Know what "Minimum DS, Maximum Practical" means in practice
+- ✅ Have a weekly schedule template to follow
+
+**Time**: ~15 minutes
+
+**Prerequisites**: None
+
 ## The Problem With Traditional AI Courses
 
 Most AI/ML courses follow this pattern:

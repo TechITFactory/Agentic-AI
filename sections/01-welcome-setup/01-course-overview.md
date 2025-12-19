@@ -1,5 +1,17 @@
 # Course Overview: What You Will Build
 
+## Why this lesson
+Orient you to the three portfolio projects and the production patterns you'll practice throughout the course.
+
+## Outcomes
+- ✅ Can describe each project, tech stack, and interview talking points
+- ✅ Know how the projects ladder from traditional ML → RAG → agents
+- ✅ Pick which project to personalize for your portfolio
+
+**Time**: ~15 minutes
+
+**Prerequisites**: None
+
 ## Welcome to Agentic AI! 🚀
 
 This isn't just another AI course with toy examples. You're going to build **three production-ready projects** that you can showcase in interviews and use as a foundation for real-world work.

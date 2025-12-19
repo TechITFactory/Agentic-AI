@@ -1,5 +1,17 @@
 # Tools Installation Guide
 
+## Why this lesson
+Install and verify every tool required for the rest of the course so you do not debug environment issues later.
+
+## Outcomes
+- ✅ Python 3.10+, VS Code, Git, Docker Desktop installed and verified
+- ✅ Repo cloned and virtual environment created
+- ✅ Jupyter works from VS Code or terminal
+
+**Time**: 30-45 minutes depending on network speed
+
+**Prerequisites**: Admin rights on your machine, stable internet
+
 ## Overview
 
 This guide will help you set up your development environment for the course. All tools are free and work on Windows, Mac, and Linux.

@@ -1,5 +1,17 @@
 # Repository Walkthrough
 
+## Why this lesson
+Learn how the repo is organized so you can find lessons, code, and labs quickly and avoid getting lost.
+
+## Outcomes
+- ✅ Know the folder layout and how sections are structured
+- ✅ Can run examples, labs, and notebooks from the right paths
+- ✅ Have a personal plan to track progress (branching or checklist)
+
+**Time**: ~10 minutes
+
+**Prerequisites**: Tools installed and repo cloned
+
 ## Repository Structure
 
 Let's explore how the course repository is organized and how to navigate it effectively.
