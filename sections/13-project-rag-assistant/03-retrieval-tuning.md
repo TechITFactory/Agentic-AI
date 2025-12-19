@@ -1,9 +1,11 @@
 # Retrieval Tuning (Chunks, k, Filters)
 
 ## Why this module
+
 Improve hit-rate with informed parameter choices.
 
 ## Outcomes
+
 - ✅ Tune chunk size/overlap
 - ✅ Select k and filters
 - ✅ Measure recall@k on a small golden set

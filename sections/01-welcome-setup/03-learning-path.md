@@ -1,9 +1,11 @@
 # Learning Path: "Minimum DS + Maximum Practical"
 
 ## Why this lesson
+
 See how the course is sequenced so you can budget time and avoid skipping foundations needed for later projects.
 
 ## Outcomes
+
 - ✅ Understand the phased roadmap (Foundation → ML Engineering → Modern AI → Projects → Career)
 - ✅ Know what "Minimum DS, Maximum Practical" means in practice
 - ✅ Have a weekly schedule template to follow
@@ -43,6 +45,7 @@ We flip it:
 ## What "Minimum DS" Means
 
 ### We WILL Teach:
+
 - ✅ What overfitting is (and how to spot it)
 - ✅ Train/validation/test splits (why they matter)
 - ✅ Basic metrics (precision, recall, RMSE)
@@ -50,6 +53,7 @@ We flip it:
 - ✅ How RAG works (architecture)
 
 ### We WON'T Teach:
+
 - ❌ Gradient descent derivations
 - ❌ Backpropagation math proofs
 - ❌ 50 different ML algorithms
@@ -88,14 +92,17 @@ We flip it:
 **Example: Teaching Feature Scaling**
 
 ```python
+
 # Concept: Features with different scales hurt model performance
 
 # Without scaling
+
 from sklearn.linear_model import LogisticRegression
 model = LogisticRegression()
 model.fit(X_train, y_train)  # Age: 20-80, Income: 20000-200000
 
 # With scaling
+
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
@@ -103,7 +110,9 @@ X_test_scaled = scaler.transform(X_test)
 model.fit(X_train_scaled, y_train)
 
 # Lab: Compare accuracy with/without scaling
+
 # See the difference yourself!
+
 ```
 
 No 30-minute lecture on normalization theory. You see the problem, apply the solution, measure the impact.
@@ -281,23 +290,33 @@ You learn by building, not by reading.
 ## The "Production-First" Mindset
 
 ### Traditional ML Teaching:
+
 ```python
+
 # Train a model
+
 model.fit(X_train, y_train)
 print("Accuracy:", model.score(X_test, y_test))
+
 # Course ends here
+
 ```
 
 ### Our Teaching:
+
 ```python
+
 # Train a model
+
 model.fit(X_train, y_train)
 print("Accuracy:", model.score(X_test, y_test))
 
 # Save the model
+
 joblib.dump(model, 'model.pkl')
 
 # Build an API
+
 from fastapi import FastAPI
 app = FastAPI()
 model = joblib.load('model.pkl')
@@ -307,10 +326,15 @@ def predict(data: PredictionInput):
     return {"prediction": model.predict([data.features])}
 
 # Dockerize it
+
 # Write Dockerfile
+
 # Deploy to Kubernetes
+
 # Set up monitoring
+
 # Now you have a production system!
+
 ```
 
 **Every model gets deployed. Every system gets monitored.**
@@ -437,6 +461,7 @@ If not, review the section before moving forward.
 ## The Learning Progression
 
 ### Stage 1: "I don't know what I don't know"
+
 - Everything is confusing
 - Too many new concepts
 - Imposter syndrome kicks in
@@ -444,6 +469,7 @@ If not, review the section before moving forward.
 **Normal! Keep going.**
 
 ### Stage 2: "I can follow examples"
+
 - Code makes sense when explained
 - Can modify existing code
 - Still need guidance
@@ -451,6 +477,7 @@ If not, review the section before moving forward.
 **You're learning. Continue.**
 
 ### Stage 3: "I can build with reference"
+
 - Can build projects with docs
 - Know what to Google
 - Occasional bugs you can fix
@@ -458,6 +485,7 @@ If not, review the section before moving forward.
 **You're getting there. Keep building.**
 
 ### Stage 4: "I can build independently"
+
 - Design solutions from scratch
 - Debug efficiently
 - Know the patterns

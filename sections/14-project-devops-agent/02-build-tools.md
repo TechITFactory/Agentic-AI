@@ -1,9 +1,11 @@
 # Build Tools: Log Analyzer, K8s Helper, YAML Generator
 
 ## Why this module
+
 Implement deterministic tools that the agent will call.
 
 ## Outcomes
+
 - ✅ Three working tools with validated inputs
 - ✅ Timeouts and error handling inside tools
 - ✅ Tests or samples for each tool

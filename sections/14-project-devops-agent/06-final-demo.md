@@ -1,9 +1,11 @@
 # Final Demo and Interview Talking Points
 
 ## Why this module
+
 Package the project for showcasing and interviews.
 
 ## Outcomes
+
 - ✅ Demo script with a safe task run
 - ✅ Architecture and guardrails summary
 - ✅ Risks/next steps articulated

@@ -1,9 +1,11 @@
 # Feature Engineering
 
 ## Why this module
+
 Craft features that improve signal while respecting leakage constraints.
 
 ## Outcomes
+
 - ✅ Baseline feature list with rationale
 - ✅ Encodings/scaling choices recorded
 - ✅ Leakage-checked transformations

@@ -45,15 +45,19 @@ python test_api.py
 Or use curl:
 
 ```bash
+
 # Health check
+
 curl http://localhost:8000/health
 
 # Single prediction
+
 curl -X POST http://localhost:8000/predict \
   -H "Content-Type: application/json" \
   -d '{"features": [25.0, 50000.0, 3.5, 1.0]}'
 
 # Batch prediction
+
 curl -X POST http://localhost:8000/predict/batch \
   -H "Content-Type: application/json" \
   -d '{"instances": [[25.0, 50000.0, 3.5, 1.0], [30.0, 60000.0, 4.0, 0.0]]}'
@@ -96,9 +100,11 @@ docker rm ml-api
 ## API Endpoints
 
 ### GET /
+
 Root endpoint with API information
 
 ### GET /health
+
 Health check for Kubernetes liveness/readiness probes
 
 **Response:**
@@ -112,6 +118,7 @@ Health check for Kubernetes liveness/readiness probes
 ```
 
 ### POST /predict
+
 Single prediction endpoint
 
 **Request:**
@@ -133,6 +140,7 @@ Single prediction endpoint
 ```
 
 ### POST /predict/batch
+
 Batch prediction endpoint (up to 1000 instances)
 
 **Request:**
@@ -156,29 +164,34 @@ Batch prediction endpoint (up to 1000 instances)
 ```
 
 ### GET /model/info
+
 Get model information
 
 ## Production Considerations
 
 ### Security
+
 - ✅ Runs as non-root user in Docker
 - ⚠️ Add authentication (API keys, OAuth)
 - ⚠️ Add rate limiting
 - ⚠️ Enable HTTPS in production
 
 ### Performance
+
 - ✅ Batch endpoint for multiple predictions
 - ⚠️ Add model caching
 - ⚠️ Consider async prediction queue for long-running models
 - ⚠️ Add connection pooling
 
 ### Monitoring
+
 - ✅ Structured logging
 - ⚠️ Add Prometheus metrics
 - ⚠️ Add distributed tracing (OpenTelemetry)
 - ⚠️ Set up alerting
 
 ### Reliability
+
 - ✅ Health check endpoint
 - ✅ Input validation
 - ⚠️ Add retry logic
@@ -195,10 +208,12 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 
 # Train your model
+
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
 
 # Save it
+
 joblib.dump(model, 'models/model.pkl')
 ```
 
@@ -220,10 +235,13 @@ COPY models/ ./models/
 Use `hey` or `ab` for load testing:
 
 ```bash
+
 # Install hey
+
 go install github.com/rakyll/hey@latest
 
 # Test single prediction endpoint
+
 hey -n 1000 -c 10 \
   -m POST \
   -H "Content-Type: application/json" \
@@ -253,9 +271,13 @@ ab -n 1000 -c 10 \
 
 **Port already in use**:
 ```bash
+
 # Find process using port 8000
+
 lsof -i :8000
+
 # Kill it
+
 kill -9 <PID>
 ```
 

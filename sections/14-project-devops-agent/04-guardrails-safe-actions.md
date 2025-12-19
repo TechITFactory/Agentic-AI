@@ -1,9 +1,11 @@
 # Guardrails and Safe Actions
 
 ## Why this module
+
 Enforce safety so the agent cannot exceed its scope or budget.
 
 ## Outcomes
+
 - ✅ Tool allowlist/denylist enforced
 - ✅ Budgets for time/steps/tokens enforced
 - ✅ Safe fallbacks and error messaging

@@ -1,9 +1,11 @@
 # Evaluation Report
 
 ## Why this module
+
 Quantify retrieval and answer quality for your assistant.
 
 ## Outcomes
+
 - ✅ Golden set and recall@k results
 - ✅ Qualitative examples with citations
 - ✅ Documented limitations and next steps

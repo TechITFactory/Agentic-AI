@@ -1,9 +1,11 @@
 # Common Interview Questions (ML + LLM + RAG + Agents)
 
 ## Why this lesson
+
 Prepare concise answers to recurring questions.
 
 ## Outcomes
+
 - ✅ Prepared answers for fundamentals
 - ✅ Stories for projects (STAR format)
 - ✅ Handling failure/edge-case questions
@@ -16,7 +18,9 @@ Prepare concise answers to recurring questions.
 3) Rehearse aloud
 
 ## Deliverable
+
 - Q&A sheet and STAR stories
 
 ## Checkpoint
+
 Can you answer “describe your RAG eval approach” in under 90 seconds?

@@ -1,9 +1,11 @@
 # Ingestion Pipeline (PDF/MD)
 
 ## Why this module
+
 Get documents into a clean, chunkable format with metadata preserved.
 
 ## Outcomes
+
 - ✅ Ingest PDF/Markdown
 - ✅ Normalize text and metadata
 - ✅ Store raw + cleaned docs for indexing

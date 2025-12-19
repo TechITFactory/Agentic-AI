@@ -1,9 +1,11 @@
 # Final Demo and Interview Talking Points
 
 ## Why this module
+
 Prepare to present the project and highlight production decisions.
 
 ## Outcomes
+
 - ✅ Concise demo script
 - ✅ Key metrics and architecture summary
 - ✅ Risks/next steps slide

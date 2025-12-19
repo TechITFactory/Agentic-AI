@@ -1,9 +1,11 @@
 # Resume and Portfolio Checklist
 
 ## Why this lesson
+
 Present your projects in a way that signals production readiness.
 
 ## Outcomes
+
 - ✅ Resume bullets for each project with impact/tech
 - ✅ Portfolio links (repo, demo, docs)
 - ✅ Role-specific tailoring
@@ -16,7 +18,9 @@ Present your projects in a way that signals production readiness.
 3) Tailor for ML vs AI/LLM roles
 
 ## Deliverable
+
 - Updated resume/portfolio section
 
 ## Checkpoint
+
 Do your bullets show impact (metrics) and production details?

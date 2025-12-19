@@ -1,9 +1,11 @@
 # Answer with Citations
 
 ## Why this module
+
 Return trustworthy responses grounded in retrieved sources.
 
 ## Outcomes
+
 - ✅ Prompt template that enforces citations
 - ✅ Structured responses (JSON) with source IDs/snippets
 - ✅ Handle no-answer cases

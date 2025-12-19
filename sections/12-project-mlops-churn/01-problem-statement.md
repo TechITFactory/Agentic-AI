@@ -1,9 +1,11 @@
 # Problem Statement and Dataset
 
 ## Why this module
+
 Define the churn prediction problem, target variable, and data you will use so the team aligns before building.
 
 ## Outcomes
+
 - ✅ Clear problem scope and target definition
 - ✅ Data sources and schema documented
 - ✅ Evaluation goal (metric) agreed

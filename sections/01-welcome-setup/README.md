@@ -50,7 +50,9 @@ Get oriented, pick your target role, and stand up a working dev environment befo
 ## Fast Commands (Windows PowerShell)
 
 ```powershell
+
 # From a workspace folder of your choice
+
 python -m venv venv; .\venv\Scripts\activate; pip install --upgrade pip
 pip install -r requirements.txt
 jupyter --version

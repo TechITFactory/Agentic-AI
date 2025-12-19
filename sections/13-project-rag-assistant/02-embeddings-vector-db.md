@@ -1,9 +1,11 @@
 # Embeddings and Vector DB Setup
 
 ## Why this module
+
 Prepare the vector store that powers retrieval.
 
 ## Outcomes
+
 - ✅ Choose embedding model and DB (FAISS/Chroma/etc.)
 - ✅ Store vectors with metadata
 - ✅ Verify index build success

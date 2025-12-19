@@ -1,9 +1,11 @@
 # Deploy Agent as a Service
 
 ## Why this module
+
 Expose the agent via an API with the same production discipline as the ML services.
 
 ## Outcomes
+
 - ✅ API wrapper (FastAPI) around the agent loop
 - ✅ Container image and optional K8s manifests
 - ✅ Basic auth/logging

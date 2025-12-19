@@ -88,17 +88,22 @@ After this section, you'll move to [Section 3: Data Science Fundamentals](../03-
 ## Quick Start
 
 ```bash
+
 # Navigate to this section
+
 cd sections/02-python-for-ai
 
 # Install section-specific dependencies (if any)
+
 pip install numpy pandas jupyter
 
 # Run examples
+
 python code/numpy_examples.py
 python code/pandas_examples.py
 
 # Launch notebook for interactive learning
+
 jupyter notebook
 ```
 

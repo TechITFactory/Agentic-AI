@@ -1,9 +1,11 @@
 # Agent Orchestration and Memory
 
 ## Why this module
+
 Wire the agent loop and memory so tools can be called coherently.
 
 ## Outcomes
+
 - ✅ Plan→Act→Observe→Reflect loop implemented
 - ✅ Short-term scratchpad + optional long-term memory
 - ✅ Logging across steps

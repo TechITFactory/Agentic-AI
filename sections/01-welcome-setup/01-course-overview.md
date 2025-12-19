@@ -1,9 +1,11 @@
 # Course Overview: What You Will Build
 
 ## Why this lesson
+
 Orient you to the three portfolio projects and the production patterns you'll practice throughout the course.
 
 ## Outcomes
+
 - ✅ Can describe each project, tech stack, and interview talking points
 - ✅ Know how the projects ladder from traditional ML → RAG → agents
 - ✅ Pick which project to personalize for your portfolio
@@ -20,7 +22,7 @@ This isn't just another AI course with toy examples. You're going to build **thr
 
 ### Project 1: MLOps Churn Prediction System 📊
 
-**What is it?**  
+**What is it?**
 A complete machine learning system that predicts customer churn with full MLOps practices.
 
 **What you'll build:**
@@ -32,7 +34,7 @@ A complete machine learning system that predicts customer churn with full MLOps 
 - CI/CD pipeline with GitHub Actions
 - Basic monitoring setup
 
-**Real-world use case:**  
+**Real-world use case:**
 This is exactly how companies deploy ML models in production. Whether it's predicting churn, fraud, or recommendations, the pattern is the same.
 
 **Interview talking points:**
@@ -46,7 +48,7 @@ This is exactly how companies deploy ML models in production. Whether it's predi
 
 ### Project 2: RAG Knowledge Assistant 📚
 
-**What is it?**  
+**What is it?**
 A Retrieval-Augmented Generation system that answers questions from your documents with proper citations - no hallucinations.
 
 **What you'll build:**
@@ -58,7 +60,7 @@ A Retrieval-Augmented Generation system that answers questions from your documen
 - Prompt injection defenses
 - Evaluation framework with golden dataset
 
-**Real-world use case:**  
+**Real-world use case:**
 Every company wants to "chat with their docs" - internal wikis, support docs, legal documents. You'll build the real thing, not a demo.
 
 **Interview talking points:**
@@ -72,7 +74,7 @@ Every company wants to "chat with their docs" - internal wikis, support docs, le
 
 ### Project 3: DevOps Agent (Agentic AI) 🤖
 
-**What is it?**  
+**What is it?**
 An autonomous AI agent that can analyze logs, interact with Kubernetes, and generate YAML configs - safely.
 
 **What you'll build:**
@@ -83,7 +85,7 @@ An autonomous AI agent that can analyze logs, interact with Kubernetes, and gene
 - Multi-step workflow orchestration
 - Agent deployment as a service
 
-**Real-world use case:**  
+**Real-world use case:**
 Agentic AI is the future - agents that can automate complex workflows. This project shows you understand the architecture and safety concerns.
 
 **Interview talking points:**
@@ -105,9 +107,9 @@ Agentic AI is the future - agents that can automate complex workflows. This proj
 
 ## What You WON'T Build (And Why)
 
-❌ **Image Classification**: Overcrowded, everyone does it  
-❌ **Sentiment Analysis**: Too basic for 2024+  
-❌ **Simple Chatbot**: No agentic capabilities, not impressive  
+❌ **Image Classification**: Overcrowded, everyone does it
+❌ **Sentiment Analysis**: Too basic for 2024+
+❌ **Simple Chatbot**: No agentic capabilities, not impressive
 ❌ **Kaggle Competition Entry**: Great for learning, but not production-focused
 
 Instead, you'll build systems that companies actually deploy and maintain.
@@ -157,10 +159,10 @@ Be honest with yourself - this course requires:
 
 ## Who This Course IS For
 
-✅ **DevOps/SRE Engineers**: Add AI to your stack  
-✅ **Backend Developers**: Transition to AI engineering  
-✅ **Junior ML Engineers**: Learn production deployment  
-✅ **Career Switchers**: With programming background  
+✅ **DevOps/SRE Engineers**: Add AI to your stack
+✅ **Backend Developers**: Transition to AI engineering
+✅ **Junior ML Engineers**: Learn production deployment
+✅ **Career Switchers**: With programming background
 ✅ **Ambitious Learners**: Want real portfolio projects
 
 ## Time Commitment

@@ -1,9 +1,11 @@
 # Capstone: Publish and Demo
 
 ## Why this lesson
+
 Showcase your work publicly to cement learning and attract opportunities.
 
 ## Outcomes
+
 - ✅ Publish a project (repo + demo video/blog)
 - ✅ Clear README with setup, demos, and limits
 - ✅ Reflection on lessons learned
@@ -16,7 +18,9 @@ Showcase your work publicly to cement learning and attract opportunities.
 3) Update README with quickstart, demo links, and limitations
 
 ## Deliverable
+
 - Published project link + demo material
 
 ## Checkpoint
+
 Is your project discoverable and reproducible by others?

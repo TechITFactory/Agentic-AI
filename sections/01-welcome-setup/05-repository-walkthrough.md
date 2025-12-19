@@ -1,9 +1,11 @@
 # Repository Walkthrough
 
 ## Why this lesson
+
 Learn how the repo is organized so you can find lessons, code, and labs quickly and avoid getting lost.
 
 ## Outcomes
+
 - ✅ Know the folder layout and how sections are structured
 - ✅ Can run examples, labs, and notebooks from the right paths
 - ✅ Have a personal plan to track progress (branching or checklist)
@@ -79,11 +81,14 @@ Lessons are numbered (01, 02, 03...) for a reason - they build on each other.
 When you see code in a lesson:
 
 ```python
+
 # DON'T just read this
+
 model = LogisticRegression()
 model.fit(X_train, y_train)
 
 # DO: Type it yourself, run it, experiment!
+
 ```
 
 **Pro tip**: Type code yourself instead of copy-pasting. Builds muscle memory.
@@ -131,10 +136,13 @@ All lessons are in Markdown format:
 Code examples you can run directly:
 
 ```bash
+
 # Navigate to section
+
 cd sections/02-python-for-ai/code
 
 # Run example
+
 python example_pandas.py
 ```
 
@@ -143,10 +151,13 @@ python example_pandas.py
 Interactive notebooks for exploration:
 
 ```bash
+
 # Launch Jupyter
+
 jupyter notebook
 
 # Navigate to section and open .ipynb file
+
 ```
 
 **Or** open directly in VS Code (if Jupyter extension installed).
@@ -212,17 +223,22 @@ shared/
 Create a branch for your work:
 
 ```bash
+
 # Create your branch
+
 git checkout -b my-progress
 
 # Make changes, complete labs
+
 # ... your work ...
 
 # Commit your progress
+
 git add .
 git commit -m "Completed Section 2 labs"
 
 # Push to your fork (if you forked the repo)
+
 git push origin my-progress
 ```
 
@@ -236,31 +252,37 @@ git push origin my-progress
 Copy this checklist to a file called `MY_PROGRESS.md`:
 
 ```markdown
+
 # My Learning Progress
 
 ## Foundation
+
 - [ ] Section 1: Welcome & Setup
 - [ ] Section 2: Python for AI
 - [ ] Section 3: Data Science Fundamentals
 
 ## ML Engineering
+
 - [ ] Section 4: Machine Learning Basics
 - [ ] Section 5: Model Serving
 - [ ] Section 6: Containers & Deployment
 - [ ] Section 7: MLOps Foundations
 
 ## Modern AI
+
 - [ ] Section 8: Intro to LLMs
 - [ ] Section 9: Embeddings & Vector DBs
 - [ ] Section 10: RAG End-to-End
 - [ ] Section 11: Agentic AI
 
 ## Projects
+
 - [ ] Section 12: MLOps Churn System
 - [ ] Section 13: RAG Knowledge Assistant
 - [ ] Section 14: DevOps Agent
 
 ## Career
+
 - [ ] Section 15: Interview Prep
 - [ ] Section 16: Bonus Content
 ```
@@ -276,13 +298,17 @@ Update as you go!
 Most examples are standalone:
 
 ```bash
+
 # Activate virtual environment first!
+
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 
 # Navigate to section
+
 cd sections/04-machine-learning-basics/code
 
 # Run example
+
 python linear_regression_example.py
 ```
 
@@ -291,13 +317,17 @@ python linear_regression_example.py
 **Encouraged!** Experiment with code:
 
 ```python
+
 # Original example
+
 model = RandomForestClassifier(n_estimators=100)
 
 # Try different parameters
+
 model = RandomForestClassifier(n_estimators=200, max_depth=10)
 
 # See how it changes results
+
 ```
 
 **Best way to learn**: Break things, fix them, understand why.
@@ -307,10 +337,13 @@ model = RandomForestClassifier(n_estimators=200, max_depth=10)
 Feel free to create your own files:
 
 ```bash
+
 # Create your playground
+
 mkdir sections/XX-section-name/my_experiments
 
 # Add to .gitignore if you don't want to commit
+
 echo "my_experiments/" >> .gitignore
 ```
 
@@ -368,24 +401,31 @@ sections/12-project-mlops-churn/
 ### Keep Course Repo Updated
 
 ```bash
+
 # Add upstream (original repo) as remote
+
 git remote add upstream https://github.com/TechITFactory/Agentic-AI.git
 
 # Fetch updates
+
 git fetch upstream
 
 # Merge updates into your branch
+
 git merge upstream/main
 ```
 
 ### Commit Your Work Regularly
 
 ```bash
+
 # After completing a lab
+
 git add sections/02-python-for-ai/labs/lab1_cleaning/my_solution.py
 git commit -m "Completed data cleaning lab"
 
 # After completing a section
+
 git add sections/02-python-for-ai/
 git commit -m "Finished Section 2: Python for AI"
 ```
@@ -417,6 +457,7 @@ Stick to it!
 Create a `NOTES.md` file:
 
 ```markdown
+
 # My Notes
 
 ## Section 2: Python for AI
@@ -480,29 +521,36 @@ my-ai-portfolio/
 ## Quick Reference
 
 ### Navigate to Section
+
 ```bash
 cd sections/XX-section-name
 ```
 
 ### Run Python File
+
 ```bash
 python filename.py
 ```
 
 ### Launch Jupyter
+
 ```bash
 jupyter notebook
+
 # or
+
 jupyter lab
 ```
 
 ### Activate Virtual Environment
+
 ```bash
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate     # Windows
 ```
 
 ### Update Dependencies
+
 ```bash
 pip install -r requirements.txt --upgrade
 ```

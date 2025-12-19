@@ -82,22 +82,26 @@ By the end of this section, you will:
 ## Key Concepts
 
 ### Dataset Structure
+
 - **Rows**: Individual samples/examples
 - **Columns**: Features (inputs) and labels (outputs)
 - **Features**: What the model learns from
 - **Labels**: What the model predicts
 
 ### The Three Splits
+
 - **Training Set**: Model learns from this (60-70%)
 - **Validation Set**: Tune hyperparameters (15-20%)
 - **Test Set**: Final evaluation (15-20%)
 
 ### Model Fit
+
 - **Underfitting**: Model too simple, poor on all data
 - **Good Fit**: Model learns patterns, generalizes well
 - **Overfitting**: Model memorizes training data, fails on new data
 
 ### Metrics
+
 - **Classification**: Accuracy, Precision, Recall, F1
 - **Regression**: MAE, MSE, RMSE, R²
 
@@ -108,28 +112,32 @@ After this section, you'll move to [Section 4: Machine Learning Basics](../04-ma
 ## Quick Start
 
 ```bash
+
 # Navigate to this section
+
 cd sections/03-data-science-fundamentals
 
 # Run demos
+
 python code/overfitting_demo.py
 python code/data_leakage_demo.py
 python code/metrics_examples.py
 
 # Complete the lab
+
 cd labs/baseline_model
 python solution.py  # After trying yourself!
 ```
 
 ## Common Questions
 
-**Q: Do I need to memorize all the metrics?**  
+**Q: Do I need to memorize all the metrics?**
 A: No! Understand when to use each one. You can always look up the formulas.
 
-**Q: What if I already know train/test splits?**  
+**Q: What if I already know train/test splits?**
 A: Great! Still review the data leakage section - it catches everyone.
 
-**Q: Should I read academic papers on these topics?**  
+**Q: Should I read academic papers on these topics?**
 A: Not necessary. Focus on practical application.
 
 ## Tips for This Section

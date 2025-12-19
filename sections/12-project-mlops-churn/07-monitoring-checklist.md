@@ -1,9 +1,11 @@
 # Monitoring Checklist
 
 ## Why this module
+
 Define how you’ll watch the service and detect model degradation.
 
 ## Outcomes
+
 - ✅ Service metrics: latency, errors, throughput
 - ✅ Model signals: input drift, output distribution
 - ✅ Alert thresholds drafted

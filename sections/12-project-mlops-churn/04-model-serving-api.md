@@ -1,9 +1,11 @@
 # Model Serving API
 
 ## Why this module
+
 Expose the trained model via FastAPI with validation and logging ready for containerization.
 
 ## Outcomes
+
 - ✅ FastAPI app with /health and /predict
 - ✅ Pydantic schemas and request logging
 - ✅ Model artifacts loaded once at startup

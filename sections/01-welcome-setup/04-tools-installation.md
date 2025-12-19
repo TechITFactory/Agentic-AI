@@ -1,9 +1,11 @@
 # Tools Installation Guide
 
 ## Why this lesson
+
 Install and verify every tool required for the rest of the course so you do not debug environment issues later.
 
 ## Outcomes
+
 - ✅ Python 3.10+, VS Code, Git, Docker Desktop installed and verified
 - ✅ Repo cloned and virtual environment created
 - ✅ Jupyter works from VS Code or terminal
@@ -41,7 +43,9 @@ We use features from Python 3.10+ (type hints, match statements) and newer libra
 
 **Option 1: Microsoft Store (Recommended)**
 ```bash
+
 # Search "Python 3.11" in Microsoft Store and install
+
 ```
 
 **Option 2: Official Installer**
@@ -51,20 +55,26 @@ We use features from Python 3.10+ (type hints, match statements) and newer libra
 4. Verify installation:
 ```bash
 python --version
+
 # Should show Python 3.10 or higher
+
 ```
 
 ### macOS
 
 **Option 1: Homebrew (Recommended)**
 ```bash
+
 # Install Homebrew if not installed
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Python
+
 brew install python@3.11
 
 # Verify
+
 python3 --version
 ```
 
@@ -77,26 +87,34 @@ python3 --version
 ### Linux (Ubuntu/Debian)
 
 ```bash
+
 # Update package list
+
 sudo apt update
 
 # Install Python 3.11
+
 sudo apt install python3.11 python3.11-venv python3-pip
 
 # Verify
+
 python3.11 --version
 ```
 
 ### Verify Installation
 
 ```bash
+
 # Check Python version
+
 python --version  # or python3 --version
 
 # Check pip
+
 pip --version  # or pip3 --version
 
 # Test Python
+
 python -c "print('Python is working!')"
 ```
 
@@ -155,8 +173,11 @@ Open VS Code and install these extensions (Ctrl+Shift+X / Cmd+Shift+X):
 
 **Option 1: Git for Windows (Recommended)**
 ```bash
+
 # Download from https://git-scm.com/download/win
+
 # Run installer with default settings
+
 ```
 
 **Option 2: GitHub Desktop**
@@ -186,17 +207,22 @@ sudo apt install git
 
 ```bash
 git --version
+
 # Should show git version 2.x or higher
+
 ```
 
 ### Configure Git
 
 ```bash
+
 # Set your name and email
+
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 
 # Verify configuration
+
 git config --list
 ```
 
@@ -221,9 +247,13 @@ git config --list
 
 1. **Enable WSL 2**:
 ```powershell
+
 # Run PowerShell as Administrator
+
 wsl --install
+
 # Restart computer
+
 ```
 
 2. **Install Docker Desktop**:
@@ -247,30 +277,39 @@ wsl --install
 ### Linux (Ubuntu)
 
 ```bash
+
 # Remove old versions
+
 sudo apt remove docker docker-engine docker.io containerd runc
 
 # Install Docker
+
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
 # Add user to docker group (avoid sudo)
+
 sudo usermod -aG docker $USER
 
 # Log out and back in, then verify
+
 docker --version
 ```
 
 ### Verify Docker Installation
 
 ```bash
+
 # Check Docker version
+
 docker --version
 
 # Run test container
+
 docker run hello-world
 
 # Should see "Hello from Docker!" message
+
 ```
 
 ### Docker Desktop Settings
@@ -287,16 +326,21 @@ docker run hello-world
 ### Using Git Command Line
 
 ```bash
+
 # Navigate to where you want the course folder
+
 cd ~/projects  # or C:\projects on Windows
 
 # Clone repository
+
 git clone https://github.com/TechITFactory/Agentic-AI.git
 
 # Navigate into repository
+
 cd Agentic-AI
 
 # Verify you're on the right branch
+
 git branch
 ```
 
@@ -332,54 +376,72 @@ git branch
 
 **Windows**:
 ```bash
+
 # Navigate to course directory
+
 cd C:\path\to\Agentic-AI
 
 # Create virtual environment
+
 python -m venv venv
 
 # Activate it
+
 venv\Scripts\activate
 
 # You should see (venv) in your prompt
+
 ```
 
 **macOS/Linux**:
 ```bash
+
 # Navigate to course directory
+
 cd ~/path/to/Agentic-AI
 
 # Create virtual environment
+
 python3 -m venv venv
 
 # Activate it
+
 source venv/bin/activate
 
 # You should see (venv) in your prompt
+
 ```
 
 ### Install Course Dependencies
 
 ```bash
+
 # Make sure virtual environment is activated
+
 # You should see (venv) in your prompt
 
 # Upgrade pip
+
 pip install --upgrade pip
 
 # Install all course requirements
+
 pip install -r requirements.txt
 
 # This will take a few minutes
+
 ```
 
 ### Verify Installation
 
 ```bash
+
 # Test imports
+
 python -c "import numpy; import pandas; import sklearn; print('All imports successful!')"
 
 # List installed packages
+
 pip list
 ```
 
@@ -390,13 +452,17 @@ pip list
 ### Launch Jupyter
 
 ```bash
+
 # With virtual environment activated
+
 jupyter notebook
 
 # Or use Jupyter Lab (modern interface)
+
 jupyter lab
 
 # Browser should open automatically
+
 ```
 
 ### VS Code Jupyter Integration
@@ -411,13 +477,16 @@ jupyter lab
 Create a test notebook:
 
 ```python
+
 # Cell 1: Test imports
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 print("Imports successful!")
 
 # Cell 2: Quick plot
+
 x = np.linspace(0, 10, 100)
 y = np.sin(x)
 plt.plot(x, y)
@@ -425,6 +494,7 @@ plt.title("Test Plot")
 plt.show()
 
 # Cell 3: Test pandas
+
 df = pd.DataFrame({
     'A': [1, 2, 3],
     'B': [4, 5, 6]
@@ -452,7 +522,9 @@ You'll need these for Sections 8-14 (LLMs, RAG, Agents):
 
 **Create `.env` file in project root**:
 ```bash
+
 # In Agentic-AI directory
+
 touch .env  # Creates .env file
 ```
 
@@ -494,22 +566,28 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 Run these commands to verify everything is set up:
 
 ```bash
+
 # Check all versions
+
 python --version          # 3.10+
 pip --version            # 23.0+
 git --version            # 2.x+
 docker --version         # 20.x+
 
 # Test Python environment
+
 python -c "import numpy, pandas, sklearn, fastapi; print('✅ Python packages OK')"
 
 # Test Docker
+
 docker run hello-world   # Should see success message
 
 # Test Jupyter
+
 jupyter --version        # Should show version info
 
 # Check if in virtual environment
+
 python -c "import sys; print('✅ Virtual env' if 'venv' in sys.prefix else '❌ Not in venv')"
 ```
 
@@ -530,13 +608,17 @@ python -c "import sys; print('✅ Virtual env' if 'venv' in sys.prefix else '❌
 ### Pip Install Fails
 
 ```bash
+
 # Upgrade pip first
+
 python -m pip install --upgrade pip
 
 # If still fails, try:
+
 pip install --upgrade setuptools wheel
 
 # Then retry installation
+
 ```
 
 ### Docker Won't Start
@@ -557,17 +639,22 @@ pip install --upgrade setuptools wheel
 ### Permission Errors (Linux)
 
 ```bash
+
 # Add user to docker group
+
 sudo usermod -aG docker $USER
 
 # Log out and back in
+
 ```
 
 ### Virtual Environment Not Activating
 
 **Windows PowerShell**:
 ```powershell
+
 # May need to allow script execution
+
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 

@@ -37,30 +37,36 @@ You work at a SaaS company. The data engineering team has dumped raw user activi
 Clean the dataset following these steps:
 
 ### Step 1: Load and Inspect
+
 - Load the CSV file
 - Check shape, column types, and missing values
 - Print first few rows
 
 ### Step 2: Handle Missing Values
+
 - `sessions`: Fill with 0 (assume no sessions)
 - `support_tickets`: Fill with 0 (assume no tickets)
 - `revenue`: Fill with median revenue (better than mean for skewed data)
 
 ### Step 3: Fix Data Quality Issues
+
 - Remove rows with negative revenue
 - Standardize subscription_type to lowercase
 - Strip whitespace from string columns
 - Convert date columns to datetime
 
 ### Step 4: Handle Outliers
+
 - Remove rows where features_used > 95th percentile (extreme outliers)
 
 ### Step 5: Feature Engineering (Bonus)
+
 - Create `days_since_signup` column
 - Create `days_since_last_login` column
 - Create `active_recently` flag (logged in within last 30 days)
 
 ### Step 6: Save Cleaned Data
+
 - Save to `data/user_activity_cleaned.csv`
 - Report how many rows were removed and why
 

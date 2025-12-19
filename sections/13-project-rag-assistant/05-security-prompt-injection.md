@@ -1,9 +1,11 @@
 # Security: Prompt Injection Defense
 
 ## Why this module
+
 Protect the assistant from malicious docs and user prompts.
 
 ## Outcomes
+
 - ✅ Add allowlist/denylist filters and content checks
 - ✅ Enforce system prompts and output validation
 - ✅ Log and block suspicious queries

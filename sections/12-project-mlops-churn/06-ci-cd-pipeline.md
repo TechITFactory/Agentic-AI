@@ -1,9 +1,11 @@
 # CI/CD Pipeline
 
 ## Why this module
+
 Automate testing and shipping so every change is validated and build artifacts are versioned.
 
 ## Outcomes
+
 - ✅ CI stages: lint, test, build, push image
 - ✅ Tagged images per commit
 - ✅ Optional deploy to staging

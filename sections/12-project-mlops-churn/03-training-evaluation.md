@@ -1,9 +1,11 @@
 # Training and Evaluation
 
 ## Why this module
+
 Train candidate models, compare against baselines, and pick a champion with evidence.
 
 ## Outcomes
+
 - ✅ Reproducible training script/config
 - ✅ Baseline vs improved models with metrics
 - ✅ Champion selection rationale

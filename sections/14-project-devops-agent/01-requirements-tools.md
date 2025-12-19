@@ -1,9 +1,11 @@
 # Agent Requirements and Tool List
 
 ## Why this module
+
 Define the agent’s scope and the tools it is allowed to use before building.
 
 ## Outcomes
+
 - ✅ Clear problem statement and success criteria
 - ✅ Tool allowlist (log analyzer, k8s helper, YAML generator)
 - ✅ Safety constraints noted
