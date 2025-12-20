@@ -3,6 +3,8 @@ Generate sample user activity dataset for data cleaning lab.
 This creates realistic messy data with common issues.
 """
 
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
@@ -68,10 +70,11 @@ for idx in range(n_users):
     if np.random.random() < 0.3:  # 30% chance of inconsistency
         df.loc[idx, 'subscription_type'] = np.random.choice(subscription_variants[original])
 
-# Save to CSV
-df.to_csv('user_activity.csv', index=False)
+# Save to CSV (next to this script)
+out_path = Path(__file__).parent / "user_activity.csv"
+df.to_csv(out_path, index=False)
 
-print("Sample dataset generated: user_activity.csv")
+print(f"Sample dataset generated: {out_path}")
 print(f"Total rows: {len(df)}")
 print(f"\nIssues introduced:")
 print(f"- Missing sessions: {df['sessions'].isnull().sum()}")

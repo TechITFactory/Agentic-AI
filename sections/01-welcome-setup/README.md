@@ -50,13 +50,23 @@ Get oriented, pick your target role, and stand up a working dev environment befo
 ## Fast Commands (Windows PowerShell)
 
 ```powershell
-
 # From a workspace folder of your choice
 
 python -m venv venv; .\venv\Scripts\activate; pip install --upgrade pip
 pip install -r requirements.txt
 jupyter --version
-```text
+```
+
+If `python` isn't recognized on Windows, install Python from python.org and disable the Microsoft Store alias (`python.exe`) in App execution aliases.
+
+## Recommended: One-command verify
+
+Run the verification script to confirm Python, pip, and key packages are working:
+
+```powershell
+python .\scripts\verify_env.py
+```
+
 ## What's Next?
 
 Once the checklist is green, move to [Section 2: Python for AI](../02-python-for-ai/README.md). If any tool fails, fix it now—every later section assumes this environment is solid.

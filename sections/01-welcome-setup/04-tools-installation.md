@@ -43,6 +43,13 @@ python --version
 # Should be >= 3.10
 ```
 
+#### Windows troubleshooting: Microsoft Store `python.exe` alias
+
+If `python --version` prints **"Python was not found"**, you likely have the Windows Store alias enabled.
+
+- Install Python from python.org (recommended), then reopen your terminal.
+- Or disable the alias: **Settings → Apps → Advanced app settings → App execution aliases** → turn off `python.exe`.
+
 ### 2. Visual Studio Code (VS Code) 
 **Why?**
 It is the industry standard. It has incredible support for Python, Jupyter Notebooks, and Docker.
@@ -100,6 +107,14 @@ Now that you have the tools, let's get the code.
     pip install -r requirements.txt
     ```
 
+### Windows (Recommended): run the setup script
+
+From the repo root in **PowerShell**:
+
+```powershell
+.\scripts\setup.ps1
+```
+
 ---
 
 ##  Verification Checklist
@@ -110,6 +125,12 @@ Before moving on, run this quick check. If you can check all these boxes, you ar
 - [ ] `docker --version` returns a version number (Docker is running).
 - [ ] You can open VS Code by typing `code .` in the repo folder.
 - [ ] You have activated your virtual environment (you see `(venv)` in your terminal).
+
+You can also run:
+
+```bash
+python ./scripts/verify_env.py
+```
 
 ---
 

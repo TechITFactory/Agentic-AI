@@ -1,0 +1,5 @@
+{"ts":"2025-12-20T10:00:00Z","user_id":"u_001","event":"login","meta":{"ip":"10.0.0.1","device":"mobile"}}
+{"ts":"2025-12-20T10:05:00Z","user_id":"u_002","event":"view_page","meta":{"page":"/pricing"}}
+{"ts":"2025-12-20T10:06:00Z","user_id":"u_001","event":"purchase","meta":{"amount":19.99,"currency":"USD"}}
+{"ts":"2025-12-20T10:07:00Z","user_id":"u_003","event":"login"}
+{"ts":"2025-12-20T10:08:00Z","user_id":"u_001","event":"view_page","meta":{"page":"/docs","device":"desktop"}}

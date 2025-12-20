@@ -4,12 +4,17 @@ Pandas Essentials - Examples for AI/ML Work
 This file demonstrates core Pandas operations you'll use constantly in ML projects.
 """
 
+from pathlib import Path
+import tempfile
+
 import pandas as pd
 import numpy as np
 
-print("=" * 60)
-print("PANDAS ESSENTIALS FOR AI/ML")
-print("=" * 60)
+
+def main() -> int:
+    print("=" * 60)
+    print("PANDAS ESSENTIALS FOR AI/ML")
+    print("=" * 60)
 
 # ====================
 # 1. CREATING DATAFRAMES
@@ -44,13 +49,15 @@ sample_csv = """user_id,name,age,city,purchases,revenue
 4,Diana,28,Chicago,15,890.25
 5,Eve,42,LA,8,560.00"""
 
-with open('temp_users.csv', 'w') as f:
-    f.write(sample_csv)
+    # Write to a temp file instead of polluting the repo folder
+    tmp_dir = Path(tempfile.mkdtemp(prefix="agentic-ai-pandas-"))
+    csv_path = tmp_dir / "users.csv"
+    csv_path.write_text(sample_csv, encoding="utf-8")
 
-# Read CSV
-df = pd.read_csv('temp_users.csv')
+    # Read CSV
+    df = pd.read_csv(csv_path)
 print("Data loaded from CSV:")
-print(df)
+    print(df)
 
 # ====================
 # 3. INSPECTING DATA
@@ -68,7 +75,7 @@ print("\nBasic statistics:")
 print(df.describe())
 
 print("\nInfo:")
-print(df.info())
+    print(df.info())
 
 # ====================
 # 4. SELECTING DATA
@@ -78,26 +85,26 @@ print("-" * 40)
 
 # Select single column (returns Series)
 print("\nAges:")
-print(df['age'])
+    print(df['age'])
 
 # Select multiple columns (returns DataFrame)
 print("\nNames and cities:")
-print(df[['name', 'city']])
+    print(df[['name', 'city']])
 
 # Select rows by position
 print("\nFirst 2 rows:")
-print(df.iloc[0:2])
+    print(df.iloc[0:2])
 
 # Select by condition (Boolean indexing)
 print("\nUsers with age > 30:")
-print(df[df['age'] > 30])
+    print(df[df['age'] > 30])
 
 print("\nUsers from NYC:")
-print(df[df['city'] == 'NYC'])
+    print(df[df['city'] == 'NYC'])
 
 # Multiple conditions
 print("\nUsers over 30 OR more than 10 purchases:")
-print(df[(df['age'] > 30) | (df['purchases'] > 10)])
+    print(df[(df['age'] > 30) | (df['purchases'] > 10)])
 
 # ====================
 # 5. ADDING/MODIFYING COLUMNS
@@ -108,12 +115,12 @@ print("-" * 40)
 # Create new column
 df['avg_purchase_value'] = df['revenue'] / df['purchases']
 print("\nAdded average purchase value:")
-print(df[['name', 'purchases', 'revenue', 'avg_purchase_value']])
+    print(df[['name', 'purchases', 'revenue', 'avg_purchase_value']])
 
 # Conditional column
 df['high_value'] = df['revenue'] > 400
 print("\nAdded high-value flag:")
-print(df[['name', 'revenue', 'high_value']])
+    print(df[['name', 'revenue', 'high_value']])
 
 # ====================
 # 6. HANDLING MISSING DATA
@@ -127,22 +134,22 @@ df_missing.loc[1, 'age'] = np.nan
 df_missing.loc[3, 'revenue'] = np.nan
 
 print("\nData with missing values:")
-print(df_missing)
+    print(df_missing)
 
 print("\nCheck for missing values:")
-print(df_missing.isnull().sum())
+    print(df_missing.isnull().sum())
 
 # Drop rows with any missing values
 df_dropped = df_missing.dropna()
 print("\nAfter dropping rows with missing values:")
-print(df_dropped)
+    print(df_dropped)
 
 # Fill missing values
 df_filled = df_missing.copy()
-df_filled['age'].fillna(df_filled['age'].mean(), inplace=True)
-df_filled['revenue'].fillna(0, inplace=True)
+    df_filled['age'] = df_filled['age'].fillna(df_filled['age'].mean())
+    df_filled['revenue'] = df_filled['revenue'].fillna(0)
 print("\nAfter filling missing values:")
-print(df_filled)
+    print(df_filled)
 
 # ====================
 # 7. GROUPBY AND AGGREGATION
@@ -152,14 +159,14 @@ print("-" * 40)
 
 # Group by city
 print("\nAverage purchases by city:")
-print(df.groupby('city')['purchases'].mean())
+    print(df.groupby('city')['purchases'].mean())
 
 print("\nMultiple aggregations:")
-city_stats = df.groupby('city').agg({
-    'purchases': ['mean', 'sum'],
-    'revenue': ['mean', 'sum']
-})
-print(city_stats)
+    city_stats = df.groupby('city').agg({
+        'purchases': ['mean', 'sum'],
+        'revenue': ['mean', 'sum']
+    })
+    print(city_stats)
 
 # ====================
 # 8. SORTING
@@ -168,10 +175,10 @@ print("\n\n8. Sorting")
 print("-" * 40)
 
 print("\nSorted by revenue (descending):")
-print(df.sort_values('revenue', ascending=False))
+    print(df.sort_values('revenue', ascending=False))
 
 print("\nSorted by city then age:")
-print(df.sort_values(['city', 'age']))
+    print(df.sort_values(['city', 'age']))
 
 # ====================
 # 9. FILTERING PATTERNS FOR ML
@@ -182,19 +189,32 @@ print("-" * 40)
 # Remove outliers
 revenue_mean = df['revenue'].mean()
 revenue_std = df['revenue'].std()
-df_no_outliers = df[
-    (df['revenue'] >= revenue_mean - 2*revenue_std) & 
-    (df['revenue'] <= revenue_mean + 2*revenue_std)
-]
-print(f"\nOriginal size: {len(df)}, After outlier removal: {len(df_no_outliers)}")
+    df_no_outliers = df[
+        (df['revenue'] >= revenue_mean - 2*revenue_std) &
+        (df['revenue'] <= revenue_mean + 2*revenue_std)
+    ]
+    print(f"\nOriginal size: {len(df)}, After outlier removal: {len(df_no_outliers)}")
 
 # Filter by multiple conditions
-active_high_value = df[
-    (df['purchases'] >= 5) & 
-    (df['revenue'] > 200)
-]
-print("\nActive high-value customers:")
-print(active_high_value[['name', 'purchases', 'revenue']])
+    active_high_value = df[
+        (df['purchases'] >= 5) &
+        (df['revenue'] > 200)
+    ]
+    print("\nActive high-value customers:")
+    print(active_high_value[['name', 'purchases', 'revenue']])
+
+    # Best-effort cleanup
+    try:
+        csv_path.unlink(missing_ok=True)
+        tmp_dir.rmdir()
+    except Exception:
+        pass
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
 
 # ====================
 # 10. SAVING DATA

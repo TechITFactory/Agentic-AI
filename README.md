@@ -30,6 +30,8 @@ cd sections/01-welcome-setup
 
 ## 📚 Course Structure
 
+For a Udemy-style curriculum outline (sections, lectures, assignments), see [COURSE_TRANSCRIPT_UDEMY.md](COURSE_TRANSCRIPT_UDEMY.md).
+
 ### Foundation (Sections 1-3)
 - **Section 1**: Welcome & Setup - Course overview, AI roles, tooling
 - **Section 2**: Python for AI - Essential Python, NumPy, Pandas

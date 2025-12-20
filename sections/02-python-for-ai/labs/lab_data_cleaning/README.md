@@ -96,7 +96,7 @@ Cleaning applied:
 
 Final dataset: 980 rows, 12 columns
 Saved to: data/user_activity_cleaned.csv
-```text
+```
 ## Starter Code
 
 Use `starter.py` as your starting point. It has the structure and TODO comments to guide you.
