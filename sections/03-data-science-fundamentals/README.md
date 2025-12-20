@@ -61,6 +61,7 @@ sections/03-data-science-fundamentals/
 ├── 07-mini-lab-baseline-model.md
 ├── code/
 │   ├── overfitting_demo.py
+│   ├── splits_demo.py
 │   ├── data_leakage_demo.py
 │   └── metrics_examples.py
 └── labs/
@@ -69,7 +70,7 @@ sections/03-data-science-fundamentals/
         ├── data/
         ├── starter.py
         └── solution.py
-```text
+```
 ## Learning Objectives
 
 By the end of this section, you will:
@@ -122,6 +123,7 @@ cd sections/03-data-science-fundamentals
 # Run demos
 
 python code/overfitting_demo.py
+python code/splits_demo.py
 python code/data_leakage_demo.py
 python code/metrics_examples.py
 
@@ -129,7 +131,7 @@ python code/metrics_examples.py
 
 cd labs/baseline_model
 python solution.py  # After trying yourself!
-```text
+```
 ## Common Questions
 
 **Q: Do I need to memorize all the metrics?**
